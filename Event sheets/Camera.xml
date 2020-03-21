@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Camera</name>
+    <events>
+        <variable constant="0" name="CameraZoom" sid="693036596479841" static="0" type="number">1</variable>
+        <event-group description="" disabled="1" sid="408781820365691" title="Zoom de caméra">
+            <sub-events>
+                <event-block disabled="1" sid="870901575153221">
+                    <conditions>
+                        <condition behavior="Physics" id="1" name="Compare velocity" sid="700778285224608" type="Vehicule">
+                            <param id="0" name="Which">2</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">100</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="214228277275180" type="System">
+                            <param id="0" name="First value">LayoutScale</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Second value">0.8</param>
+                        </condition>
+                        <condition id="2" name="Key is down" sid="233459539100951" type="Keyboard">
+                            <param id="0" name="Key">90</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-20" name="Set layout scale" sid="562593478366994" type="System">
+                            <param id="0" name="Scale">LayoutScale*0.9992</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="620082005672072">
+                    <conditions>
+                        <condition behavior="Physics" id="1" name="Compare velocity" sid="317443773832905" type="Vehicule">
+                            <param id="0" name="Which">2</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">100</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="145258148846068" type="System">
+                            <param id="0" name="First value">LayoutScale</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Second value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-20" name="Set layout scale" sid="334187323422726" type="System">
+                            <param id="0" name="Scale">LayoutScale*1.005</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="149679736084343" title="Mouvement amorti + autre support de caméra">
+            <sub-events>
+                <event-block sid="115321463610896">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="163061627018675" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="988226348004217" type="CameraBis">
+                            <param id="0" name="X">Self.X+((Vehicule.X-Self.X)*0.3)</param>
+                            <param id="1" name="Y">Self.Y+((Vehicule.Y-Self.Y)*0.3)</param>
+                        </action>
+                        <action behavior="ScrollTo" id="1" name="Set enabled" sid="249198863736045" type="Vehicule">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="ScrollTo" id="1" name="Set enabled" sid="961464838542041" type="CameraBis">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="861355965593318" type="Score">
+                            <param id="0" name="Object">CameraBis</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="572753607729428" type="Timer">
+                            <param id="0" name="Object">Score</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="196470385357465" title="Screenshake">
+            <sub-events>
+                <event-block sid="967718229999491">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="693000022698487" type="Vehicule">
+                            <param id="0" name="Object">Mur</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="ScrollTo" id="0" name="Shake" sid="646695320657704" type="Vehicule">
+                            <param id="0" name="Magnitude">3</param>
+                            <param id="1" name="Duration">0.2</param>
+                            <param id="2" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" disabled="1" sid="927801765328968" title="Rotation de caméra">
+            <sub-events>
+                <event-block disabled="1" sid="620533626947850">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="518593142350010" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-22" name="Set layout angle" sid="150852759254266" type="System">
+                            <param id="0" name="Angle">Vehicule.Angle+90</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

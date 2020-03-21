@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Contrôles</name>
+    <events>
+        <variable comment="Pour compatibilité manettes" constant="0" name="Manette" sid="340809329050729" static="0" type="number">0</variable>
+        <variable constant="0" name="ForceRotation" sid="253016971981982" static="0" type="number">200</variable>
+        <variable constant="0" name="ImpulsionSaut" sid="116478805172044" static="0" type="number">5</variable>
+        <variable constant="0" name="CompteurSaut" sid="992593881615155" static="0" type="number">0</variable>
+        <variable constant="0" name="Impulsion" sid="631505698326736" static="0" type="number">2</variable>
+        <variable constant="0" name="ForceConstante" sid="374142862689057" static="0" type="number">100</variable>
+        <variable constant="0" name="ForceConstanteVueLatérale" sid="179698918403449" static="0" type="number">10</variable>
+        <event-group description="" sid="766466537980583" title="Support GAMEPAD">
+            <sub-events>
+                <event-block sid="752895183447427">
+                    <conditions>
+                        <condition id="1" name="On gamepad connected" sid="149965214088625" type="Gamepad" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="882041551102746" type="System">
+                            <param id="0" name="Variable">Manette</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="776040342273625">
+                    <conditions>
+                        <condition id="2" name="On gamepad disconnected" sid="927872233042398" type="Gamepad" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="710554631719447" type="System">
+                            <param id="0" name="Variable">Manette</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="456187337914817" title="Gravité">
+            <sub-events>
+                <event-block sid="529366262874201">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="417098395105743" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Physics" id="12" name="Set world gravity" sid="772540396870530" type="Vehicule">
+                            <param id="0" name="Gravity">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="627286365635976" title="Le Clavier">
+            <sub-events>
+                <event-group description="" sid="608655214714383" title="Force constante CLAVIER2">
+                    <sub-events>
+                        <event-block sid="429734375758111">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="171846504106960" type="Keyboard">
+                                    <param id="0" name="Key">90</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="683469908928795" type="System">
+                                    <param id="0" name="Variable">Manette</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="2" name="Apply force at angle" sid="728286444635218" type="Vehicule">
+                                    <param id="0" name="Force">ForceConstante*dt</param>
+                                    <param id="1" name="Angle">Vehicule.Angle</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="992689663367555">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="898131685065156" type="Keyboard">
+                                    <param id="0" name="Key">83</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="706455675584131" type="System">
+                                    <param id="0" name="Variable">Manette</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="2" name="Apply force at angle" sid="588033194128999" type="Vehicule">
+                                    <param id="0" name="Force">-ForceConstante/4*dt</param>
+                                    <param id="1" name="Angle">Vehicule.Angle</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="503710086610060" title="Force de rotation2">
+                    <sub-events>
+                        <event-group description="" sid="751980059115242" title="Droite2" />
+                        <event-block sid="421149756620946">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="217522939672998" type="Keyboard">
+                                    <param id="0" name="Key">68</param>
+                                </condition>
+                                <condition id="2" name="Key is down" sid="221354921316784" type="Keyboard">
+                                    <param id="0" name="Key">90</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="748972894946272" type="System">
+                                    <param id="0" name="Variable">Manette</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="6" name="Apply torque" sid="335734976451962" type="Vehicule">
+                                    <param id="0" name="Torque">ForceRotation*dt</param>
+                                </action>
+                                <action behavior="Physics" id="15" name="Set velocity" sid="130408006994146" type="Vehicule">
+                                    <param id="0" name="X component">Self.physics.VelocityX*0.99</param>
+                                    <param id="1" name="Y component">Self.physics.VelocityY*0.99</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="820342236036761">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="432624896526807" type="Keyboard">
+                                    <param id="0" name="Key">68</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="873890136957919" type="System">
+                                    <param id="0" name="Variable">Manette</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="6" name="Apply torque" sid="709245678462842" type="Vehicule">
+                                    <param id="0" name="Torque">ForceRotation/2*dt</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="617512212601493">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="902224784365847" type="Keyboard">
+                                    <param id="0" name="Key">68</param>
+                                </condition>
+                                <condition id="2" name="Key is down" sid="510188170228841" type="Keyboard">
+                                    <param id="0" name="Key">83</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="362235377224296" type="System">
+                                    <param id="0" name="Variable">Manette</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="6" name="Apply torque" sid="286191042384725" type="Vehicule">
+                                    <param id="0" name="Torque">ForceRotation*dt</param>
+                                </action>
+                                <action behavior="Physics" id="15" name="Set velocity" sid="822780177656696" type="Vehicule">
+                                    <param id="0" name="X component">Self.physics.VelocityX*0.99</param>
+                                    <param id="1" name="Y component">Self.physics.VelocityY*0.99</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="827775654307237">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="694140535538672" type="Keyboard">
+                                    <param id="0" name="Key">68</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="845000108924910" type="System">
+                                    <param id="0" name="Variable">Manette</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="6" name="Apply torque" sid="481013529736072" type="Vehicule">
+                                    <param id="0" name="Torque">ForceRotation/2*dt</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-group description="" sid="690069111458209" title="Gauche2" />
+                        <event-block sid="263716661445810">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="199978787390547" type="Keyboard">
+                                    <param id="0" name="Key">81</param>
+                                </condition>
+                                <condition id="2" name="Key is down" sid="974639219180557" type="Keyboard">
+                                    <param id="0" name="Key">90</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="381024972209031" type="System">
+                                    <param id="0" name="Variable">Manette</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="6" name="Apply torque" sid="821528933146154" type="Vehicule">
+                                    <param id="0" name="Torque">-ForceRotation*dt</param>
+                                </action>
+                                <action behavior="Physics" id="15" name="Set velocity" sid="771064132080194" type="Vehicule">
+                                    <param id="0" name="X component">Self.physics.VelocityX*0.99</param>
+                                    <param id="1" name="Y component">Self.physics.VelocityY*0.99</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="792238212824540">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="727852786214577" type="Keyboard">
+                                    <param id="0" name="Key">81</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="707259911221519" type="System">
+                                    <param id="0" name="Variable">Manette</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="6" name="Apply torque" sid="741227803258535" type="Vehicule">
+                                    <param id="0" name="Torque">-ForceRotation/2*dt</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="188604022500828">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="506265922672864" type="Keyboard">
+                                    <param id="0" name="Key">81</param>
+                                </condition>
+                                <condition id="2" name="Key is down" sid="874887224784850" type="Keyboard">
+                                    <param id="0" name="Key">83</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="993641072777657" type="System">
+                                    <param id="0" name="Variable">Manette</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="6" name="Apply torque" sid="686320214769463" type="Vehicule">
+                                    <param id="0" name="Torque">-ForceRotation*dt</param>
+                                </action>
+                                <action behavior="Physics" id="15" name="Set velocity" sid="868457893432494" type="Vehicule">
+                                    <param id="0" name="X component">Self.physics.VelocityX*0.99</param>
+                                    <param id="1" name="Y component">Self.physics.VelocityY*0.99</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="283445053698066">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="971710622201871" type="Keyboard">
+                                    <param id="0" name="Key">81</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="188061625707123" type="System">
+                                    <param id="0" name="Variable">Manette</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="6" name="Apply torque" sid="803532078138481" type="Vehicule">
+                                    <param id="0" name="Torque">-ForceRotation/2*dt</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="443515081132083" title="Ralentissement2">
+                    <sub-events>
+                        <event-block sid="381928315677184">
+                            <conditions>
+                                <condition id="2" inverted="1" name="Key is down" sid="258352761621511" type="Keyboard">
+                                    <param id="0" name="Key">90</param>
+                                </condition>
+                                <condition id="2" inverted="1" name="Key is down" sid="873463769224512" type="Keyboard">
+                                    <param id="0" name="Key">83</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="515206393012278" type="System">
+                                    <param id="0" name="Variable">Manette</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="15" name="Set velocity" sid="738260151537230" type="Vehicule">
+                                    <param id="0" name="X component">Self.Physics.VelocityX*0.98</param>
+                                    <param id="1" name="Y component">Self.Physics.VelocityY*0.98</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="126010028297853">
+                            <conditions>
+                                <condition id="2" inverted="1" name="Key is down" sid="981389845834285" type="Keyboard">
+                                    <param id="0" name="Key">81</param>
+                                </condition>
+                                <condition id="2" inverted="1" name="Key is down" sid="472068761060621" type="Keyboard">
+                                    <param id="0" name="Key">68</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="586429424770554" type="System">
+                                    <param id="0" name="Variable">Manette</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="9" name="Set angular velocity" sid="267847263078529" type="Vehicule">
+                                    <param id="0" name="Angular velocity">Self.Physics.AngularVelocity*0.95</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="378402170588627" title="La Manette">
+            <sub-events>
+                <event-group description="" sid="452843707668624" title="Force constante GAMEPAD2">
+                    <sub-events>
+                        <event-block sid="604690682529504">
+                            <conditions>
+                                <condition id="3" name="Is button down" sid="811758174628252" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">7</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="618475682403076" type="System">
+                                    <param id="0" name="Variable">Manette</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="2" name="Apply force at angle" sid="776385213859270" type="Vehicule">
+                                    <param id="0" name="Force">ForceConstante*dt</param>
+                                    <param id="1" name="Angle">Vehicule.Angle</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="244630727598733">
+                            <conditions>
+                                <condition id="3" name="Is button down" sid="225692231138977" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">6</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="127486725481853" type="System">
+                                    <param id="0" name="Variable">Manette</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="2" name="Apply force at angle" sid="389040692455670" type="Vehicule">
+                                    <param id="0" name="Force">-ForceConstante/4*dt</param>
+                                    <param id="1" name="Angle">Vehicule.Angle</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="833676027665496" title="Force de rotation manette2">
+                    <sub-events>
+                        <event-group description="" sid="910228950584139" title="Droite manette2" />
+                        <event-block sid="171794113472976">
+                            <conditions>
+                                <condition id="5" name="Compare axis" sid="657681032547518" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Axis">0</param>
+                                    <param id="2" name="Comparison">5</param>
+                                    <param id="3" name="Value">50</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="255718350869350" type="System">
+                                    <param id="0" name="Variable">Manette</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="6" name="Apply torque" sid="571833137615615" type="Vehicule">
+                                    <param id="0" name="Torque">ForceRotation*dt</param>
+                                </action>
+                                <action behavior="Physics" id="15" name="Set velocity" sid="152073809978277" type="Vehicule">
+                                    <param id="0" name="X component">Self.physics.VelocityX*0.99</param>
+                                    <param id="1" name="Y component">Self.physics.VelocityY*0.99</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-group description="" sid="355874854362611" title="Gauche manette2" />
+                        <event-block sid="128291803205834">
+                            <conditions>
+                                <condition id="5" name="Compare axis" sid="117527289447470" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Axis">0</param>
+                                    <param id="2" name="Comparison">3</param>
+                                    <param id="3" name="Value">-50</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="759436633542138" type="System">
+                                    <param id="0" name="Variable">Manette</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="6" name="Apply torque" sid="992777031071987" type="Vehicule">
+                                    <param id="0" name="Torque">-ForceRotation*dt</param>
+                                </action>
+                                <action behavior="Physics" id="15" name="Set velocity" sid="241010093669385" type="Vehicule">
+                                    <param id="0" name="X component">Self.physics.VelocityX*0.99</param>
+                                    <param id="1" name="Y component">Self.physics.VelocityY*0.99</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="654709615969801" title="Ralentissement (Gamepad)2">
+                    <sub-events>
+                        <event-block sid="204367014699404">
+                            <conditions>
+                                <condition id="3" inverted="1" name="Is button down" sid="621841127346585" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">7</param>
+                                </condition>
+                                <condition id="3" inverted="1" name="Is button down" sid="970028246566909" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">6</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="315508183428458" type="System">
+                                    <param id="0" name="Variable">Manette</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="15" name="Set velocity" sid="475306997160807" type="Vehicule">
+                                    <param id="0" name="X component">Self.Physics.VelocityX*0.98</param>
+                                    <param id="1" name="Y component">Self.Physics.VelocityY*0.98</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="780014648945543">
+                            <conditions>
+                                <condition id="5" name="Compare axis" sid="236428351109789" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Axis">0</param>
+                                    <param id="2" name="Comparison">2</param>
+                                    <param id="3" name="Value">10</param>
+                                </condition>
+                                <condition id="5" name="Compare axis" sid="480289182131854" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Axis">0</param>
+                                    <param id="2" name="Comparison">4</param>
+                                    <param id="3" name="Value">-10</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="113301483678542" type="System">
+                                    <param id="0" name="Variable">Manette</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="9" name="Set angular velocity" sid="394377459955603" type="Vehicule">
+                                    <param id="0" name="Angular velocity">Self.Physics.AngularVelocity*0.95</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
