@@ -10,6 +10,8 @@
     <unique-id>3ay4ux7vaj60p</unique-id>
     <saved-with-version>27200</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -340,13 +342,13 @@
                 <animation framecount="1" loop="0" name="etendoir_pq" pingpong="0" repeatcount="1" repeatto="0" sid="556977456686764" speed="5">
                     <frame duration="1" hotspotX="0.503497" hotspotY="0.502326" original-source="C:\Users\utilisateur\Desktop\Asset FNS\DA\Rayon et Etendoir\Etendoir_PQ.png">
                         <collision-poly>
-                            <point x="0.145933" y="0.145933" />
+                            <point x="0" y="0" />
                             <point x="0.5" y="0" />
-                            <point x="0.854067" y="0.145933" />
+                            <point x="1" y="0" />
                             <point x="1" y="0.5" />
-                            <point x="0.854067" y="0.854067" />
+                            <point x="1" y="1" />
                             <point x="0.5" y="1" />
-                            <point x="0.145933" y="0.854067" />
+                            <point x="0" y="1" />
                             <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
@@ -371,6 +373,11 @@
         </object-type>
         <object-type name="Rayon_spe" sid="860980529214247">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="393223205856102">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Rayon_pain" pingpong="0" repeatcount="1" repeatto="0" sid="200335331435950" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\Asset FNS\DA\Rayon et Etendoir\Rayon Pain\Rayon Pain.png">
@@ -497,6 +504,12 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Audio" sid="668245332907156">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Function" sid="377150487728137">
+            <plugin id="Function" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -508,6 +521,7 @@
         <event-sheet>Camera.xml</event-sheet>
         <event-sheet>Collect.xml</event-sheet>
         <event-sheet>Timer.xml</event-sheet>
+        <event-sheet>Son.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="1" />
@@ -516,8 +530,38 @@
                 <analog-deadzone>25</analog-deadzone>
             </properties>
         </global-instance>
+        <global-instance type="Audio" uid="22">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Function" uid="23" />
     </global-instances>
-    <sounds-folder />
+    <sounds-folder>
+        <sound-folder name="Hit">
+            <file name="Hit1_ogg.ogg" />
+            <file name="Hit2_ogg.ogg" />
+            <file name="Hit3_ogg.ogg" />
+            <file name="Hit4_ogg.ogg" />
+            <file name="Hit5_ogg.ogg" />
+            <file name="Hit6_ogg.ogg" />
+        </sound-folder>
+        <sound-folder name="Ramassage">
+            <file name="Ramassage1_ogg.ogg" />
+            <file name="Ramassage2_ogg.ogg" />
+            <file name="Ramassage3_ogg.ogg" />
+        </sound-folder>
+        <file name="Bip_scan.ogg" />
+    </sounds-folder>
     <music-folder />
     <files-folder>
         <file-folder name="Icons">

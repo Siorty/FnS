@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Global</name>
     <events>
+        <include>Son</include>
         <include>Timer</include>
         <include>Collect</include>
         <include>Camera</include>

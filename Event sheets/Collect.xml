@@ -201,6 +201,10 @@
                             <param id="0" name="Object">ProdDisable</param>
                             <param id="1" name="Image point (optional)">0</param>
                         </action>
+                        <action id="0" name="Call function" sid="557397245370051" type="Function">
+                            <param id="0" name="Name">&quot;Sound_Ramassage&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -221,6 +225,12 @@
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="222944961996228">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

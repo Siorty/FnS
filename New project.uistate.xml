@@ -10,12 +10,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Layout 1</layout>
+        <layout order="0">Layout 1</layout>
         <event-sheet order="1">Contrôles</event-sheet>
         <event-sheet order="2">Global</event-sheet>
         <event-sheet order="3">Camera</event-sheet>
-        <event-sheet order="4">Collect</event-sheet>
+        <event-sheet active="1" order="4">Collect</event-sheet>
         <event-sheet order="5">Timer</event-sheet>
+        <event-sheet order="6">Son</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -32,6 +33,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="0" path="sound-folder/Hit/" />
+        <folder expanded="1" path="sound-folder/Ramassage/" />
         <folder expanded="1" path="animation-folder/Vehicule/" />
         <folder expanded="1" path="animation-folder/Mur/" />
         <folder expanded="1" path="animation-folder/CameraBis/" />

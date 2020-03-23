@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Son</name>
+    <events>
+        <event-block sid="148787822202312">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="484340713658417" type="Vehicule">
+                    <param id="0" name="Object">Zone_caisse</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="611968792520294" type="Audio">
+                    <param id="0" name="Audio file">Bip_scan</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;bip&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="742439574041125" title="Sound_hit">
+            <sub-events>
+                <event-block any="1" sid="681254562998651">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="543187477222828" type="Vehicule">
+                            <param id="0" name="Object">Etendoir</param>
+                        </condition>
+                        <condition id="0" name="On collision with another object" sid="111426294146477" type="Vehicule">
+                            <param id="0" name="Object">Rayon</param>
+                        </condition>
+                        <condition id="0" name="On collision with another object" sid="546552973471012" type="Vehicule">
+                            <param id="0" name="Object">Rayon_spe</param>
+                        </condition>
+                        <condition id="0" name="On collision with another object" sid="911773241940340" type="Vehicule">
+                            <param id="0" name="Object">Mur</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <variable constant="0" name="hit_random" sid="596348929961492" static="0" type="number">0</variable>
+                        <event-block sid="420497390033319">
+                            <conditions />
+                            <actions>
+                                <action id="-9" name="Set value" sid="819408899961396" type="System">
+                                    <param id="0" name="Variable">hit_random</param>
+                                    <param id="1" name="Value">choose(0,1,2,3,4,5)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="251003701527886">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="103943997505812" type="System">
+                                            <param id="0" name="Variable">hit_random</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="163088662334005" type="Audio">
+                                            <param id="0" name="Audio file">Hit1_ogg</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="810151725358014">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="433486224151231" type="System">
+                                            <param id="0" name="Variable">hit_random</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="547626388514815" type="Audio">
+                                            <param id="0" name="Audio file">Hit2_ogg</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="468429420630195">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="958785447961219" type="System">
+                                            <param id="0" name="Variable">hit_random</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="622319324188113" type="Audio">
+                                            <param id="0" name="Audio file">Hit3_ogg</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="162434470074598">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="517128105534430" type="System">
+                                            <param id="0" name="Variable">hit_random</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="486164330163528" type="Audio">
+                                            <param id="0" name="Audio file">Hit4_ogg</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="175276285719836">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="809619934488699" type="System">
+                                            <param id="0" name="Variable">hit_random</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="385501676245129" type="Audio">
+                                            <param id="0" name="Audio file">Hit5_ogg</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="208044593021492">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="388765874677532" type="System">
+                                            <param id="0" name="Variable">hit_random</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="779627110660441" type="Audio">
+                                            <param id="0" name="Audio file">Hit6_ogg</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="114294714292272" title="Sound_Ramssage">
+            <sub-events>
+                <event-block sid="840575872887289">
+                    <conditions>
+                        <condition id="0" name="On function" sid="666834201346444" type="Function">
+                            <param id="0" name="Name">&quot;Sound_Ramassage&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <variable constant="0" name="Ramassage_random" sid="594006677214756" static="0" type="number">0</variable>
+                        <event-block sid="468811687935915">
+                            <conditions />
+                            <actions>
+                                <action id="-9" name="Set value" sid="524758331175923" type="System">
+                                    <param id="0" name="Variable">Ramassage_random</param>
+                                    <param id="1" name="Value">choose(0,1,2)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="467216631484174">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="291502502232607" type="System">
+                                            <param id="0" name="Variable">Ramassage_random</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="253939573705268" type="Audio">
+                                            <param id="0" name="Audio file">Ramassage1_ogg</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="455982688148475">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="996780430316027" type="System">
+                                            <param id="0" name="Variable">Ramassage_random</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="235963945179790" type="Audio">
+                                            <param id="0" name="Audio file">Ramassage2_ogg</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="515878220129792">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="261700205056164" type="System">
+                                            <param id="0" name="Variable">Ramassage_random</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="491385382549366" type="Audio">
+                                            <param id="0" name="Audio file">Ramassage3_ogg</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
