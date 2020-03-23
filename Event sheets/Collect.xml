@@ -52,28 +52,93 @@
                     <param id="0" name="Instance variable">Index_list</param>
                     <param id="1" name="Value">choose(0,1,2)</param>
                 </action>
-                <action id="-10" name="Set value" sid="283932403732260" type="Vehicule">
+                <action disabled="1" id="-10" name="Set value" sid="283932403732260" type="Vehicule">
                     <param id="0" name="Instance variable">index_collect1</param>
                     <param id="1" name="Value">Liste.Index_list</param>
                 </action>
-                <action id="-10" name="Set value" sid="428692072580336" type="Liste">
+                <action disabled="1" id="-10" name="Set value" sid="428692072580336" type="Liste">
                     <param id="0" name="Instance variable">Index_list</param>
                     <param id="1" name="Value">choose(0,1,2)</param>
                 </action>
-                <action id="-10" name="Set value" sid="580296746101409" type="Vehicule">
+                <action disabled="1" id="-10" name="Set value" sid="580296746101409" type="Vehicule">
                     <param id="0" name="Instance variable">index_collect2</param>
                     <param id="1" name="Value">Liste.Index_list</param>
                 </action>
-                <action id="-10" name="Set value" sid="177962758221465" type="Liste">
+                <action disabled="1" id="-10" name="Set value" sid="177962758221465" type="Liste">
                     <param id="0" name="Instance variable">Index_list</param>
                     <param id="1" name="Value">choose(0,1,2)</param>
                 </action>
-                <action id="-10" name="Set value" sid="466629977855456" type="Vehicule">
+                <action disabled="1" id="-10" name="Set value" sid="466629977855456" type="Vehicule">
                     <param id="0" name="Instance variable">index_collect3</param>
                     <param id="1" name="Value">Liste.Index_list</param>
                 </action>
             </actions>
             <sub-events>
+                <event-block sid="264666112650935">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="944162720503745" type="System">
+                            <param id="0" name="Object">Liste</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="614159916184124">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="273912468212830" type="Vehicule">
+                                    <param id="0" name="Instance variable">index_collect2</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="797728173032140" type="Vehicule">
+                                    <param id="0" name="Instance variable">index_collect1</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="314367556645017" type="Vehicule">
+                                    <param id="0" name="Instance variable">index_collect3</param>
+                                    <param id="1" name="Value">Liste.Index_list</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="653688322178252">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="487500693367405" type="Vehicule">
+                                    <param id="0" name="Instance variable">index_collect1</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="949350310370890" type="Vehicule">
+                                    <param id="0" name="Instance variable">index_collect2</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="706316496816382" type="Vehicule">
+                                    <param id="0" name="Instance variable">index_collect2</param>
+                                    <param id="1" name="Value">Liste.Index_list</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="660341872568984">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="308456389799626" type="Vehicule">
+                                    <param id="0" name="Instance variable">index_collect1</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="506667305920259" type="Vehicule">
+                                    <param id="0" name="Instance variable">index_collect1</param>
+                                    <param id="1" name="Value">Liste.Index_list</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
                 <event-group description="" sid="208970103982575" title="Create_list">
                     <sub-events>
                         <event-block sid="974670510132659">
