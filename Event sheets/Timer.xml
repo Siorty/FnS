@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Timer</name>
+    <events>
+        <variable constant="0" name="TimerSeconds" sid="309310153600021" static="0" type="number">0</variable>
+        <variable constant="0" name="TimerMinutes" sid="233453529850702" static="0" type="number">0</variable>
+        <event-group description="" sid="615131633754710" title="Timer">
+            <sub-events>
+                <event-block any="1" sid="532758724286768">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="999657702546154" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="230048095638644" type="Timer">
+                            <param id="0" name="Text">&quot;Temps : &quot; &amp; TimerMinutes &amp; &quot; : &quot; &amp; TimerSeconds</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="368416078480598">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="192535286352786" type="System">
+                            <param id="0" name="Interval (seconds)">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="605860883735634" type="System">
+                            <param id="0" name="Variable">TimerSeconds</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="374852212639164">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="543480459480708" type="System">
+                            <param id="0" name="Interval (seconds)">60</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="243443577635118" type="System">
+                            <param id="0" name="Variable">TimerSeconds</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="891429061922215" type="System">
+                            <param id="0" name="Variable">TimerMinutes</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

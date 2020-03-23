@@ -10,11 +10,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Layout 1</layout>
+        <layout active="1" order="0">Layout 1</layout>
         <event-sheet order="1">Contrôles</event-sheet>
         <event-sheet order="2">Global</event-sheet>
         <event-sheet order="3">Camera</event-sheet>
-        <event-sheet active="1" order="4">Collect</event-sheet>
+        <event-sheet order="4">Collect</event-sheet>
+        <event-sheet order="5">Timer</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -34,16 +35,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Vehicule/" />
         <folder expanded="1" path="animation-folder/Mur/" />
         <folder expanded="1" path="animation-folder/CameraBis/" />
-        <folder expanded="1" path="animation-folder/Mur2/" />
-        <folder expanded="1" path="animation-folder/Mur3/" />
-        <folder expanded="1" path="animation-folder/Sprite2/" />
-        <folder expanded="1" path="animation-folder/Coin/" />
         <folder expanded="1" path="animation-folder/ProdDisable/" />
-        <folder expanded="1" path="animation-folder/CoinXY2/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
-        <folder expanded="1" path="animation-folder/CoinXY/" />
         <folder expanded="1" path="animation-folder/Produit/" />
         <folder expanded="1" path="animation-folder/Liste/" />
         <folder expanded="1" path="animation-folder/Zone_caisse/" />
+        <folder expanded="1" path="animation-folder/Etendoir/" />
+        <folder expanded="1" path="animation-folder/Rayon/" />
+        <folder expanded="1" path="animation-folder/Rayon_spe/" />
+        <folder expanded="1" path="animation-folder/Caisse/" />
+        <folder expanded="1" path="animation-folder/Cercle/" />
     </folders-expanded>
 </c2uistate>
