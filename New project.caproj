@@ -307,6 +307,48 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="1" loop="0" name="Poisson" pingpong="0" repeatcount="1" repeatto="0" sid="813174471453632" speed="5">
+                    <frame duration="1" hotspotX="0.506024" hotspotY="0.518519" original-source="C:\Users\utilisateur\Desktop\FNS\DA\Item_Ramssage\Fish.png">
+                        <collision-poly>
+                            <point x="0.207192" y="0.20302" />
+                            <point x="0.5" y="0.0385906" />
+                            <point x="0.792808" y="0.20302" />
+                            <point x="0.996575" y="0.5" />
+                            <point x="0.881849" y="0.884228" />
+                            <point x="0.5" y="1" />
+                            <point x="0.118151" y="0.884228" />
+                            <point x="0.00342466" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Bouteille" pingpong="0" repeatcount="1" repeatto="0" sid="222668831928863" speed="5">
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.513889" original-source="C:\Users\utilisateur\Desktop\FNS\DA\Item_Ramssage\Bouteille.png">
+                        <collision-poly>
+                            <point x="0.207192" y="0.20302" />
+                            <point x="0.5" y="0.0385906" />
+                            <point x="0.792808" y="0.20302" />
+                            <point x="0.996575" y="0.5" />
+                            <point x="0.881849" y="0.884228" />
+                            <point x="0.5" y="1" />
+                            <point x="0.118151" y="0.884228" />
+                            <point x="0.00342466" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pq" pingpong="0" repeatcount="1" repeatto="0" sid="432540134814528" speed="5">
+                    <frame duration="1" hotspotX="0.509091" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\FNS\DA\Item_Ramssage\Papier_fion.png">
+                        <collision-poly>
+                            <point x="0.0797414" y="0.0848624" />
+                            <point x="0.5" y="0" />
+                            <point x="0.918103" y="0.087156" />
+                            <point x="1" y="0.5" />
+                            <point x="0.918103" y="0.912844" />
+                            <point x="0.5" y="0.995413" />
+                            <point x="0.0840517" y="0.91055" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="Zone_caisse" sid="976756823804581">
