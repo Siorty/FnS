@@ -56,14 +56,14 @@
                         <condition id="-1" name="Every tick" sid="163061627018675" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-3" name="Set position" sid="988226348004217" type="CameraBis">
+                        <action disabled="1" id="-3" name="Set position" sid="988226348004217" type="CameraBis">
                             <param id="0" name="X">Self.X+((Vehicule.X-Self.X)*0.3)</param>
                             <param id="1" name="Y">Self.Y+((Vehicule.Y-Self.Y)*0.3)</param>
                         </action>
                         <action behavior="ScrollTo" id="1" name="Set enabled" sid="249198863736045" type="Vehicule">
                             <param id="0" name="State">0</param>
                         </action>
-                        <action behavior="ScrollTo" id="1" name="Set enabled" sid="961464838542041" type="CameraBis">
+                        <action behavior="ScrollTo" disabled="1" id="1" name="Set enabled" sid="961464838542041" type="CameraBis">
                             <param id="0" name="State">1</param>
                         </action>
                         <action id="-4" name="Set position to another object" sid="861355965593318" type="Score">
