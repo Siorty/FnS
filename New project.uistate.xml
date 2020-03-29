@@ -13,10 +13,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="0">Layout 1</layout>
         <event-sheet order="1">Global</event-sheet>
         <event-sheet order="2">Contrôles</event-sheet>
-        <event-sheet active="1" order="3">Camera</event-sheet>
-        <event-sheet order="4">Collect</event-sheet>
+        <event-sheet order="3">Camera</event-sheet>
+        <event-sheet active="1" order="4">Collect</event-sheet>
         <event-sheet order="5">Timer</event-sheet>
         <event-sheet order="6">Son</event-sheet>
+        <event-sheet order="7">Break</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

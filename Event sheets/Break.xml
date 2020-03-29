@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Break</name>
+    <events>
+        <variable constant="1" name="hit" sid="293481446582538" static="0" type="number">-1</variable>
+        <event-block sid="803748010436761">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="346827726231624" type="Vehicule">
+                    <param id="0" name="Object">Rayon</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="923772288375423">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="417374725640492" type="Rayon">
+                            <param id="0" name="Instance variable">health_rayon</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Add to" sid="983189958176339" type="Rayon">
+                            <param id="0" name="Instance variable">health_rayon</param>
+                            <param id="1" name="Value">HIT</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="178887341099126">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="699566418327378" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="566566398749644">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="469757631594856" type="Rayon">
+                                    <param id="0" name="Instance variable">Rayon</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="991093964287990" type="Rayon">
+                                    <param id="0" name="Instance variable">Break</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="184709943690464" type="Rayon">
+                                    <param id="0" name="Animation">&quot;Rayon1_break&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-14" name="Toggle boolean" sid="566543381915343" type="Rayon">
+                                    <param id="0" name="Instance variable">Break</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="663901194973672">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="190036963175242" type="Rayon">
+                                    <param id="0" name="Instance variable">Rayon</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="759068662587029" type="Rayon">
+                                    <param id="0" name="Instance variable">Break</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="815435702651700" type="Rayon">
+                                    <param id="0" name="Animation">&quot;Rayon2_break&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-14" name="Toggle boolean" sid="358653211489836" type="Rayon">
+                                    <param id="0" name="Instance variable">Break</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

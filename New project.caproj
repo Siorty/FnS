@@ -357,6 +357,11 @@
         </object-type>
         <object-type name="Rayon" sid="807575698002728">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Rayon" sid="429101416044463" type="number" />
+                <instance-variable name="Break" sid="325011619493079" type="boolean" />
+                <instance-variable name="health_rayon" sid="393482852247915" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Physics" sid="724191534145765">
                     <behavior id="Physics" />
@@ -368,6 +373,70 @@
                 </animation>
                 <animation framecount="1" loop="0" name="Rayon_2" pingpong="0" repeatcount="1" repeatto="0" sid="489872480112543" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.504" original-source="C:\Users\utilisateur\Desktop\Asset FNS\DA\Rayon et Etendoir\Rayon 2\Rayon 2.png" />
+                </animation>
+                <animation framecount="3" loop="0" name="Rayon1_break" pingpong="0" repeatcount="1" repeatto="0" sid="107530837188399" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504" original-source="C:\Users\utilisateur\Desktop\FNS\DA\Rayon et Etendoir\Rayon\Rayon cassé 2.png">
+                        <collision-poly>
+                            <point x="0.00790635" y="0.065847" />
+                            <point x="0.502812" y="0.0207503" />
+                            <point x="0.993452" y="0.0834921" />
+                            <point x="0.991726" y="0.968254" />
+                            <point x="0.496812" y="0.938661" />
+                            <point x="0.00564122" y="0.978355" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504" original-source="C:\Users\utilisateur\Desktop\FNS\DA\Rayon et Etendoir\Rayon\Rayon cassé 3.png">
+                        <collision-poly>
+                            <point x="0.001" y="0.053847" />
+                            <point x="0.501812" y="0.0207503" />
+                            <point x="0.997452" y="0.0954921" />
+                            <point x="0.991726" y="0.968254" />
+                            <point x="0.496812" y="0.890661" />
+                            <point x="0.00464122" y="0.930355" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.502" hotspotY="0.358974" original-source="C:\Users\utilisateur\Desktop\FNS\DA\Rayon et Etendoir\Rayon\Rayon cassé 4.png">
+                        <collision-poly>
+                            <point x="0.001" y="0.053847" />
+                            <point x="0.501812" y="0.0207503" />
+                            <point x="0.997452" y="0.0954921" />
+                            <point x="0.996726" y="0.780254" />
+                            <point x="0.497812" y="0.702661" />
+                            <point x="0.001" y="0.718355" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="Rayon2_break" pingpong="0" repeatcount="1" repeatto="0" sid="962463386689433" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504" original-source="C:\Users\utilisateur\Desktop\FNS\DA\Rayon et Etendoir\Rayon 2\Rayon 2 Cassé.png">
+                        <collision-poly>
+                            <point x="0" y="0.069847" />
+                            <point x="0.502812" y="0.0207503" />
+                            <point x="1" y="0.127492" />
+                            <point x="0.991726" y="0.968254" />
+                            <point x="0.496812" y="0.902661" />
+                            <point x="0.00564122" y="0.978355" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504" original-source="C:\Users\utilisateur\Desktop\FNS\DA\Rayon et Etendoir\Rayon 2\Rayon 2 Cassé 2.png">
+                        <collision-poly>
+                            <point x="0" y="0.069847" />
+                            <point x="0.502812" y="0.0207503" />
+                            <point x="1" y="0.127492" />
+                            <point x="0.991726" y="0.968254" />
+                            <point x="0.496812" y="0.902661" />
+                            <point x="0.00564122" y="0.978355" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504" original-source="C:\Users\utilisateur\Desktop\FNS\DA\Rayon et Etendoir\Rayon 2\Rayon 2 Cassé 3.png">
+                        <collision-poly>
+                            <point x="0" y="0.069847" />
+                            <point x="0.502812" y="0.0207503" />
+                            <point x="1" y="0.127492" />
+                            <point x="0.997726" y="0.948254" />
+                            <point x="0.506812" y="0.862661" />
+                            <point x="0.00564122" y="0.938355" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -522,6 +591,7 @@
         <event-sheet>Collect.xml</event-sheet>
         <event-sheet>Timer.xml</event-sheet>
         <event-sheet>Son.xml</event-sheet>
+        <event-sheet>Break.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="1" />
