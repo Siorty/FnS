@@ -173,87 +173,303 @@
                 <instance-variable name="index_prod" sid="564431113000512" type="number" />
             </instance-variables>
             <animation-folder>
-                <animation framecount="1" loop="0" name="C0_Tomate" pingpong="0" repeatcount="1" repeatto="0" sid="218356916793881" speed="5">
-                    <frame duration="1" hotspotX="0.511111" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\Projet 2eme Semestre Caddie\DA\Tomate.png">
+                <animation framecount="4" loop="1" name="C0_Tomate" pingpong="0" repeatcount="1" repeatto="0" sid="607711087199409" speed="7">
+                    <frame duration="1" hotspotX="0.507813" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\Test\tomate\Tomate2.png">
                         <collision-poly>
-                            <point x="0" y="0" />
+                            <point x="0.0878906" y="0.190678" />
                             <point x="0.5" y="0.0385906" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0.521739" />
-                            <point x="1" y="1" />
-                            <point x="0.477778" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0.00342466" y="0.5" />
+                            <point x="0.859375" y="0.101695" />
+                            <point x="0.947747" y="0.493644" />
+                            <point x="0.865234" y="0.891949" />
+                            <point x="0.492188" y="0.976695" />
+                            <point x="0.123047" y="0.908898" />
+                            <point x="0.0522528" y="0.53178" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507813" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\Test\tomate\tomate3.png">
+                        <collision-poly>
+                            <point x="0.0878906" y="0.190678" />
+                            <point x="0.5" y="0.0385906" />
+                            <point x="0.859375" y="0.101695" />
+                            <point x="0.947747" y="0.493644" />
+                            <point x="0.865234" y="0.891949" />
+                            <point x="0.492188" y="0.976695" />
+                            <point x="0.123047" y="0.908898" />
+                            <point x="0.0522528" y="0.53178" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507813" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0878906" y="0.190678" />
+                            <point x="0.5" y="0.0385906" />
+                            <point x="0.859375" y="0.101695" />
+                            <point x="0.947747" y="0.493644" />
+                            <point x="0.865234" y="0.891949" />
+                            <point x="0.492188" y="0.976695" />
+                            <point x="0.123047" y="0.908898" />
+                            <point x="0.0522528" y="0.53178" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507813" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\Test\tomate\tomate4.png">
+                        <collision-poly>
+                            <point x="0.0878906" y="0.190678" />
+                            <point x="0.5" y="0.0385906" />
+                            <point x="0.859375" y="0.101695" />
+                            <point x="0.947747" y="0.493644" />
+                            <point x="0.865234" y="0.891949" />
+                            <point x="0.492188" y="0.976695" />
+                            <point x="0.123047" y="0.908898" />
+                            <point x="0.0522528" y="0.53178" />
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="1" loop="0" name="C1_Pain" pingpong="0" repeatcount="1" repeatto="0" sid="957034274675511" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\Projet 2eme Semestre Caddie\DA\Pain.png">
+                <animation framecount="4" loop="1" name="C1_Pain" pingpong="0" repeatcount="1" repeatto="0" sid="957034274675511" speed="7">
+                    <frame duration="1" hotspotX="0.507813" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\Test\Pain\Pain1.png">
                         <collision-poly>
-                            <point x="0" y="0" />
+                            <point x="0.0878906" y="0.190678" />
                             <point x="0.5" y="0.0385906" />
-                            <point x="1" y="0" />
-                            <point x="0.996575" y="0.5" />
-                            <point x="1" y="1" />
-                            <point x="0.5" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0.00342466" y="0.5" />
+                            <point x="0.859375" y="0.101695" />
+                            <point x="0.947747" y="0.493644" />
+                            <point x="0.865234" y="0.891949" />
+                            <point x="0.492188" y="0.976695" />
+                            <point x="0.123047" y="0.908898" />
+                            <point x="0.0522528" y="0.53178" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507813" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\Test\Pain\Pain2.png">
+                        <collision-poly>
+                            <point x="0.0878906" y="0.190678" />
+                            <point x="0.5" y="0.0385906" />
+                            <point x="0.859375" y="0.101695" />
+                            <point x="0.947747" y="0.493644" />
+                            <point x="0.865234" y="0.891949" />
+                            <point x="0.492188" y="0.976695" />
+                            <point x="0.123047" y="0.908898" />
+                            <point x="0.0522528" y="0.53178" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507813" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\Test\Pain\Pain3.png">
+                        <collision-poly>
+                            <point x="0.0878906" y="0.190678" />
+                            <point x="0.5" y="0.0385906" />
+                            <point x="0.859375" y="0.101695" />
+                            <point x="0.947747" y="0.493644" />
+                            <point x="0.865234" y="0.891949" />
+                            <point x="0.492188" y="0.976695" />
+                            <point x="0.123047" y="0.908898" />
+                            <point x="0.0522528" y="0.53178" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507813" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\Test\Pain\Pain4.png">
+                        <collision-poly>
+                            <point x="0.0878906" y="0.190678" />
+                            <point x="0.5" y="0.0385906" />
+                            <point x="0.859375" y="0.101695" />
+                            <point x="0.947747" y="0.493644" />
+                            <point x="0.865234" y="0.891949" />
+                            <point x="0.492188" y="0.976695" />
+                            <point x="0.123047" y="0.908898" />
+                            <point x="0.0522528" y="0.53178" />
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="1" loop="0" name="C2_Viande" pingpong="0" repeatcount="1" repeatto="0" sid="447522337401166" speed="5">
-                    <frame duration="1" hotspotX="0.509434" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\Projet 2eme Semestre Caddie\DA\Viande.png">
+                <animation framecount="4" loop="1" name="C2_Viande" pingpong="0" repeatcount="1" repeatto="0" sid="447522337401166" speed="7">
+                    <frame duration="1" hotspotX="0.507813" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\Test\Viande\Viande1.png">
                         <collision-poly>
-                            <point x="0" y="0" />
+                            <point x="0.0878906" y="0.190678" />
                             <point x="0.5" y="0.0385906" />
-                            <point x="1" y="0" />
-                            <point x="0.996575" y="0.5" />
-                            <point x="1" y="1" />
-                            <point x="0.5" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0.00342466" y="0.5" />
+                            <point x="0.859375" y="0.101695" />
+                            <point x="0.947747" y="0.493644" />
+                            <point x="0.865234" y="0.891949" />
+                            <point x="0.492188" y="0.976695" />
+                            <point x="0.123047" y="0.908898" />
+                            <point x="0.0522528" y="0.53178" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507813" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\Test\Viande\Viande2.png">
+                        <collision-poly>
+                            <point x="0.0878906" y="0.190678" />
+                            <point x="0.5" y="0.0385906" />
+                            <point x="0.859375" y="0.101695" />
+                            <point x="0.947747" y="0.493644" />
+                            <point x="0.865234" y="0.891949" />
+                            <point x="0.492188" y="0.976695" />
+                            <point x="0.123047" y="0.908898" />
+                            <point x="0.0522528" y="0.53178" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507813" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\Test\Viande\Viande3.png">
+                        <collision-poly>
+                            <point x="0.0878906" y="0.190678" />
+                            <point x="0.5" y="0.0385906" />
+                            <point x="0.859375" y="0.101695" />
+                            <point x="0.947747" y="0.493644" />
+                            <point x="0.865234" y="0.891949" />
+                            <point x="0.492188" y="0.976695" />
+                            <point x="0.123047" y="0.908898" />
+                            <point x="0.0522528" y="0.53178" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507813" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\Test\Viande\Viande4.png">
+                        <collision-poly>
+                            <point x="0.0878906" y="0.190678" />
+                            <point x="0.5" y="0.0385906" />
+                            <point x="0.859375" y="0.101695" />
+                            <point x="0.947747" y="0.493644" />
+                            <point x="0.865234" y="0.891949" />
+                            <point x="0.492188" y="0.976695" />
+                            <point x="0.123047" y="0.908898" />
+                            <point x="0.0522528" y="0.53178" />
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="1" loop="0" name="C3_Poisson" pingpong="0" repeatcount="1" repeatto="0" sid="848049443170509" speed="5">
-                    <frame duration="1" hotspotX="0.505263" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\Asset FNS\DA\Item_Ramssage\Fish.png">
+                <animation framecount="4" loop="1" name="C3_Poisson" pingpong="0" repeatcount="1" repeatto="0" sid="848049443170509" speed="7">
+                    <frame duration="1" hotspotX="0.507813" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\Test\Poisson\Poisson1.png">
                         <collision-poly>
-                            <point x="0" y="0" />
+                            <point x="0.0878906" y="0.190678" />
                             <point x="0.5" y="0.0385906" />
-                            <point x="1" y="0" />
-                            <point x="0.996575" y="0.5" />
-                            <point x="1" y="1" />
-                            <point x="0.5" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0.00342466" y="0.5" />
+                            <point x="0.859375" y="0.101695" />
+                            <point x="0.947747" y="0.493644" />
+                            <point x="0.865234" y="0.891949" />
+                            <point x="0.492188" y="0.976695" />
+                            <point x="0.123047" y="0.908898" />
+                            <point x="0.0522528" y="0.53178" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507813" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\Test\Poisson\Poisson2.png">
+                        <collision-poly>
+                            <point x="0.0878906" y="0.190678" />
+                            <point x="0.5" y="0.0385906" />
+                            <point x="0.859375" y="0.101695" />
+                            <point x="0.947747" y="0.493644" />
+                            <point x="0.865234" y="0.891949" />
+                            <point x="0.492188" y="0.976695" />
+                            <point x="0.123047" y="0.908898" />
+                            <point x="0.0522528" y="0.53178" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507813" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\Test\Poisson\Poisson3.png">
+                        <collision-poly>
+                            <point x="0.0878906" y="0.190678" />
+                            <point x="0.5" y="0.0385906" />
+                            <point x="0.859375" y="0.101695" />
+                            <point x="0.947747" y="0.493644" />
+                            <point x="0.865234" y="0.891949" />
+                            <point x="0.492188" y="0.976695" />
+                            <point x="0.123047" y="0.908898" />
+                            <point x="0.0522528" y="0.53178" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507813" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\Test\Poisson\Poisson4.png">
+                        <collision-poly>
+                            <point x="0.0878906" y="0.190678" />
+                            <point x="0.5" y="0.0385906" />
+                            <point x="0.859375" y="0.101695" />
+                            <point x="0.947747" y="0.493644" />
+                            <point x="0.865234" y="0.891949" />
+                            <point x="0.492188" y="0.976695" />
+                            <point x="0.123047" y="0.908898" />
+                            <point x="0.0522528" y="0.53178" />
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="1" loop="0" name="C4_Bouteille" pingpong="0" repeatcount="1" repeatto="0" sid="980900696455427" speed="5">
-                    <frame duration="1" hotspotX="0.52381" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\Asset FNS\DA\Item_Ramssage\Bouteille.png">
+                <animation framecount="4" loop="1" name="C4_Bouteille" pingpong="0" repeatcount="1" repeatto="0" sid="980900696455427" speed="7">
+                    <frame duration="1" hotspotX="0.507813" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\Test\Bouteille\Bouteille1.png">
                         <collision-poly>
-                            <point x="0" y="0" />
+                            <point x="0.0878906" y="0.190678" />
                             <point x="0.5" y="0.0385906" />
-                            <point x="1" y="0" />
-                            <point x="0.996575" y="0.5" />
-                            <point x="1" y="1" />
-                            <point x="0.5" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0.00342466" y="0.5" />
+                            <point x="0.859375" y="0.101695" />
+                            <point x="0.947747" y="0.493644" />
+                            <point x="0.865234" y="0.891949" />
+                            <point x="0.492188" y="0.976695" />
+                            <point x="0.123047" y="0.908898" />
+                            <point x="0.0522528" y="0.53178" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507813" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\Test\Bouteille\Bouteille2.png">
+                        <collision-poly>
+                            <point x="0.0878906" y="0.190678" />
+                            <point x="0.5" y="0.0385906" />
+                            <point x="0.859375" y="0.101695" />
+                            <point x="0.947747" y="0.493644" />
+                            <point x="0.865234" y="0.891949" />
+                            <point x="0.492188" y="0.976695" />
+                            <point x="0.123047" y="0.908898" />
+                            <point x="0.0522528" y="0.53178" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507813" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\Test\Bouteille\Bouteille3.png">
+                        <collision-poly>
+                            <point x="0.0878906" y="0.190678" />
+                            <point x="0.5" y="0.0385906" />
+                            <point x="0.859375" y="0.101695" />
+                            <point x="0.947747" y="0.493644" />
+                            <point x="0.865234" y="0.891949" />
+                            <point x="0.492188" y="0.976695" />
+                            <point x="0.123047" y="0.908898" />
+                            <point x="0.0522528" y="0.53178" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507813" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\Test\Bouteille\Bouteille4.png">
+                        <collision-poly>
+                            <point x="0.0878906" y="0.190678" />
+                            <point x="0.5" y="0.0385906" />
+                            <point x="0.859375" y="0.101695" />
+                            <point x="0.947747" y="0.493644" />
+                            <point x="0.865234" y="0.891949" />
+                            <point x="0.492188" y="0.976695" />
+                            <point x="0.123047" y="0.908898" />
+                            <point x="0.0522528" y="0.53178" />
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="1" loop="0" name="C5_Pq" pingpong="0" repeatcount="1" repeatto="0" sid="803833803386087" speed="5">
-                    <frame duration="1" hotspotX="0.526316" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\Asset FNS\DA\Item_Ramssage\Papier_fion.png">
+                <animation framecount="4" loop="1" name="C5_Pq" pingpong="0" repeatcount="1" repeatto="0" sid="803833803386087" speed="7">
+                    <frame duration="1" hotspotX="0.507813" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\Test\Pq\Pq1.png">
                         <collision-poly>
-                            <point x="0" y="0" />
+                            <point x="0.0878906" y="0.190678" />
                             <point x="0.5" y="0.0385906" />
-                            <point x="1" y="0" />
-                            <point x="0.996575" y="0.5" />
-                            <point x="1" y="1" />
-                            <point x="0.5" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0.00342466" y="0.5" />
+                            <point x="0.859375" y="0.101695" />
+                            <point x="0.947747" y="0.493644" />
+                            <point x="0.865234" y="0.891949" />
+                            <point x="0.492188" y="0.976695" />
+                            <point x="0.123047" y="0.908898" />
+                            <point x="0.0522528" y="0.53178" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507813" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\Test\Pq\Pq2.png">
+                        <collision-poly>
+                            <point x="0.0878906" y="0.190678" />
+                            <point x="0.5" y="0.0385906" />
+                            <point x="0.859375" y="0.101695" />
+                            <point x="0.947747" y="0.493644" />
+                            <point x="0.865234" y="0.891949" />
+                            <point x="0.492188" y="0.976695" />
+                            <point x="0.123047" y="0.908898" />
+                            <point x="0.0522528" y="0.53178" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507813" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\Test\Pq\Pq3.png">
+                        <collision-poly>
+                            <point x="0.0878906" y="0.190678" />
+                            <point x="0.5" y="0.0385906" />
+                            <point x="0.859375" y="0.101695" />
+                            <point x="0.947747" y="0.493644" />
+                            <point x="0.865234" y="0.891949" />
+                            <point x="0.492188" y="0.976695" />
+                            <point x="0.123047" y="0.908898" />
+                            <point x="0.0522528" y="0.53178" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507813" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\Test\Pq\Pq4.png">
+                        <collision-poly>
+                            <point x="0.0878906" y="0.190678" />
+                            <point x="0.5" y="0.0385906" />
+                            <point x="0.859375" y="0.101695" />
+                            <point x="0.947747" y="0.493644" />
+                            <point x="0.865234" y="0.891949" />
+                            <point x="0.492188" y="0.976695" />
+                            <point x="0.123047" y="0.908898" />
+                            <point x="0.0522528" y="0.53178" />
                         </collision-poly>
                     </frame>
                 </animation>
