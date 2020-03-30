@@ -265,8 +265,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1216</x>
-                        <y>640</y>
+                        <x>1717</x>
+                        <y>896</y>
                         <z>0</z>
                         <width>143</width>
                         <height>215</height>
@@ -502,6 +502,44 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="Rayon_merde" uid="21">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Physics">
+                            <properties>
+                                <immovable>Yes</immovable>
+                                <collision-mask>Use collision polygon</collision-mask>
+                                <prevent-rotation>No</prevent-rotation>
+                                <density>1</density>
+                                <friction>0.5</friction>
+                                <elasticity>0.2</elasticity>
+                                <linear-damping>0</linear-damping>
+                                <angular-damping>0.01</angular-damping>
+                                <bullet>No</bullet>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1294</x>
+                        <y>522</y>
+                        <z>0</z>
+                        <width>484.549255371</width>
+                        <height>559.868835449</height>
+                        <depth>0</depth>
+                        <hotspotX>0.500211775</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -670,7 +708,7 @@
                         <width>128</width>
                         <height>118</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
+                        <hotspotX>0.5078125</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
@@ -770,7 +808,7 @@
                         <width>128</width>
                         <height>118</height>
                         <depth>0</depth>
-                        <hotspotX>0.5234375</hotspotX>
+                        <hotspotX>0.5078125</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
@@ -795,7 +833,7 @@
                         <width>128</width>
                         <height>118</height>
                         <depth>0</depth>
-                        <hotspotX>0.5234375</hotspotX>
+                        <hotspotX>0.5078125</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>

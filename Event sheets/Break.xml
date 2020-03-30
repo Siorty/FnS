@@ -26,6 +26,48 @@
                             <param id="1" name="Value">HIT</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="103568975829362">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="696366245311658" type="Rayon">
+                                    <param id="0" name="Instance variable">health_rayon</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="350427864972096" type="Rayon">
+                                    <param id="0" name="Instance variable">Rayon</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="901025066883015" type="Rayon">
+                                    <param id="0" name="Animation">&quot;Rayon1_break_stance&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="590634787371872">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="488547978257708" type="Rayon">
+                                    <param id="0" name="Instance variable">health_rayon</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="324818806948108" type="Rayon">
+                                    <param id="0" name="Instance variable">Rayon</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="594669738829491" type="Rayon">
+                                    <param id="0" name="Animation">&quot;Rayon2_break_stance&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="178887341099126">
                     <conditions>

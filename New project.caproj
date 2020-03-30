@@ -632,8 +632,8 @@
                 <animation framecount="1" loop="0" name="Rayon_2" pingpong="0" repeatcount="1" repeatto="0" sid="489872480112543" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.504" original-source="C:\Users\utilisateur\Desktop\Asset FNS\DA\Rayon et Etendoir\Rayon 2\Rayon 2.png" />
                 </animation>
-                <animation framecount="3" loop="0" name="Rayon1_break" pingpong="0" repeatcount="1" repeatto="0" sid="107530837188399" speed="10">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.504" original-source="C:\Users\utilisateur\Desktop\FNS\DA\Rayon et Etendoir\Rayon\Rayon cassé 2.png">
+                <animation framecount="1" loop="0" name="Rayon1_break_stance" pingpong="0" repeatcount="1" repeatto="0" sid="973988839275282" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504">
                         <collision-poly>
                             <point x="0.00790635" y="0.065847" />
                             <point x="0.502812" y="0.0207503" />
@@ -643,6 +643,20 @@
                             <point x="0.00564122" y="0.978355" />
                         </collision-poly>
                     </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Rayon2_break_stance" pingpong="0" repeatcount="1" repeatto="0" sid="920845708892294" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504">
+                        <collision-poly>
+                            <point x="0" y="0.069847" />
+                            <point x="0.502812" y="0.0207503" />
+                            <point x="1" y="0.127492" />
+                            <point x="0.991726" y="0.968254" />
+                            <point x="0.496812" y="0.902661" />
+                            <point x="0.00564122" y="0.978355" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="Rayon1_break" pingpong="0" repeatcount="1" repeatto="0" sid="107530837188399" speed="10">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.504" original-source="C:\Users\utilisateur\Desktop\FNS\DA\Rayon et Etendoir\Rayon\Rayon cassé 3.png">
                         <collision-poly>
                             <point x="0.001" y="0.053847" />
@@ -664,17 +678,7 @@
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="3" loop="0" name="Rayon2_break" pingpong="0" repeatcount="1" repeatto="0" sid="962463386689433" speed="10">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.504" original-source="C:\Users\utilisateur\Desktop\FNS\DA\Rayon et Etendoir\Rayon 2\Rayon 2 Cassé.png">
-                        <collision-poly>
-                            <point x="0" y="0.069847" />
-                            <point x="0.502812" y="0.0207503" />
-                            <point x="1" y="0.127492" />
-                            <point x="0.991726" y="0.968254" />
-                            <point x="0.496812" y="0.902661" />
-                            <point x="0.00564122" y="0.978355" />
-                        </collision-poly>
-                    </frame>
+                <animation framecount="2" loop="0" name="Rayon2_break" pingpong="0" repeatcount="1" repeatto="0" sid="962463386689433" speed="10">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.504" original-source="C:\Users\utilisateur\Desktop\FNS\DA\Rayon et Etendoir\Rayon 2\Rayon 2 Cassé 2.png">
                         <collision-poly>
                             <point x="0" y="0.069847" />
@@ -836,6 +840,31 @@
         </object-type>
         <object-type name="Function" sid="377150487728137">
             <plugin id="Function" />
+        </object-type>
+        <object-type name="Rayon_merde" sid="573805558900183">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="693241579242666">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="597521448964767" speed="5">
+                    <frame duration="1" hotspotX="0.500212" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\FNS\DA\Rayon et Etendoir\Rayon Poisson\Poissonerie.png">
+                        <collision-poly>
+                            <point x="0.395171" y="0.707111" />
+                            <point x="0.547226" y="0.605572" />
+                            <point x="0.650572" y="0.463343" />
+                            <point x="0.728928" y="0.180352" />
+                            <point x="0.734858" y="0.00439883" />
+                            <point x="1" y="0" />
+                            <point x="0.775942" y="0.734971" />
+                            <point x="0.00677679" y="1" />
+                            <point x="0" y="0.772727" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
