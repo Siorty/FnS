@@ -485,7 +485,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Index_list>0</Index_list>
+                        <Prod_index_list>0</Prod_index_list>
+                        <Index_list>2</Index_list>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -915,6 +916,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <Prod_index_list>0</Prod_index_list>
                         <Index_list>0</Index_list>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -940,6 +942,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <Prod_index_list>1</Prod_index_list>
                         <Index_list>1</Index_list>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
