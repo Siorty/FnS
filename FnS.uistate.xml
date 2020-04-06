@@ -18,8 +18,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet order="4">Timer</event-sheet>
         <event-sheet order="5">Camera</event-sheet>
         <event-sheet order="6">Son</event-sheet>
-        <event-sheet order="7">Break</event-sheet>
-        <event-sheet active="1" order="8">Menupause</event-sheet>
+        <event-sheet active="1" order="7">Break</event-sheet>
+        <event-sheet order="8">Menupause</event-sheet>
         <event-sheet order="10">Menu_prin</event-sheet>
     </open-tabs>
     <properties>
@@ -36,19 +36,19 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Background/" />
         <folder expanded="0" path="object-folder/Object_utile/" />
         <folder expanded="0" path="object-folder/Player/" />
-        <folder expanded="0" path="object-folder/Rayon/Etendoir/" />
+        <folder expanded="1" path="object-folder/Rayon/Etendoir/" />
         <folder expanded="0" path="object-folder/Produit/" />
         <folder expanded="0" path="object-folder/Extrat/" />
         <folder expanded="0" path="object-folder/MP/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
-        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="0" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="0" path="sound-folder/Hit/" />
         <folder expanded="0" path="sound-folder/Ramassage/" />
-        <folder expanded="1" path="sound-folder/Selection_menu/" />
+        <folder expanded="0" path="sound-folder/Selection_menu/" />
         <folder expanded="1" path="animation-folder/Liste/" />
         <folder expanded="1" path="animation-folder/Menu_pause/" />
         <folder expanded="1" path="animation-folder/Mur/" />

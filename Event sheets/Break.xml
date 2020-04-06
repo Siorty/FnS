@@ -121,5 +121,81 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="631778894650973">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="846022992656306" type="Vehicule">
+                    <param id="0" name="Object">Rayon_spe</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="376972012481223">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="811267795253005" type="Rayon_spe">
+                            <param id="0" name="Instance variable">health_rayonspe</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Add to" sid="462601964832002" type="Rayon_spe">
+                            <param id="0" name="Instance variable">health_rayonspe</param>
+                            <param id="1" name="Value">HIT</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="464132749420553">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="402351763084678" type="Rayon_spe">
+                                    <param id="0" name="Instance variable">health_rayonspe</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="289870847923855" type="Rayon_spe">
+                                    <param id="0" name="Instance variable">index_rayon_spe</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="844409246977306" type="Rayon_spe">
+                                    <param id="0" name="Animation">&quot;Rayon_pain_break_stance&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="452319752479902">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="652163965899306" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="409432072736347">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="365962770179650" type="Rayon_spe">
+                                    <param id="0" name="Instance variable">index_rayon_spe</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="171758303478252" type="Rayon_spe">
+                                    <param id="0" name="Instance variable">Break</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="767286708389390" type="Rayon_spe">
+                                    <param id="0" name="Animation">&quot;Rayon_prain_break&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-14" name="Toggle boolean" sid="788764794994507" type="Rayon_spe">
+                                    <param id="0" name="Instance variable">Break</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>

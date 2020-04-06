@@ -230,6 +230,9 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="Décompte" sid="958088723002493">
+                <plugin id="Text" />
+            </object-type>
         </object-folder>
         <object-folder name="Background">
             <object-type name="Mur" sid="196269390366333">
@@ -503,6 +506,11 @@
             </object-type>
             <object-type name="Rayon_spe" sid="860980529214247">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="index_rayon_spe" sid="518558340702708" type="number" />
+                    <instance-variable name="health_rayonspe" sid="303171614757088" type="number" />
+                    <instance-variable name="Break" sid="412193181724755" type="boolean" />
+                </instance-variables>
                 <behaviors>
                     <behavior-type name="Physics" sid="393223205856102">
                         <behavior id="Physics" />
@@ -526,6 +534,40 @@
                                 <point x="1" y="0" />
                                 <point x="1" y="1" />
                                 <point x="0.00060423" y="0.998296" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Rayon_pain_break_stance" pingpong="0" repeatcount="1" repeatto="0" sid="334699626688835" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.504274" original-source="C:\Users\utilisateur\Desktop\FNS\DA\Rayon et Etendoir\Rayon Pain\Rayon pain C1.png">
+                            <collision-poly>
+                                <point x="0.00636943" y="0.112815" />
+                                <point x="0.503185" y="0.00854701" />
+                                <point x="0.993631" y="0.0384616" />
+                                <point x="1" y="0.948718" />
+                                <point x="0.503487" y="0.922225" />
+                                <point x="0.0260819" y="0.989749" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="2" loop="0" name="Rayon_prain_break" pingpong="0" repeatcount="1" repeatto="0" sid="292226975884873" speed="5">
+                        <frame duration="1" hotspotX="0.501484" hotspotY="0.503704" original-source="C:\Users\utilisateur\Desktop\FNS\DA\Rayon et Etendoir\Rayon Pain\Rayon pain C2.png">
+                            <collision-poly>
+                                <point x="0.0362125" y="0.0609628" />
+                                <point x="0.515139" y="0" />
+                                <point x="0.967359" y="0.0222222" />
+                                <point x="0.973294" y="0.82963" />
+                                <point x="0.516925" y="0.798296" />
+                                <point x="0.0510493" y="0.833333" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.530973" hotspotY="0.370787" original-source="C:\Users\utilisateur\Desktop\FNS\DA\Rayon et Etendoir\Rayon Pain\Rayon pain C3.png">
+                            <collision-poly>
+                                <point x="0.0804603" y="0.0665808" />
+                                <point x="0.544637" y="0" />
+                                <point x="1" y="0.0224719" />
+                                <point x="1" y="0.610529" />
+                                <point x="0.537574" y="0.612903" />
+                                <point x="0.098247" y="0.659176" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -933,7 +975,7 @@
                             </collision-poly>
                         </frame>
                     </animation>
-                    <animation framecount="4" loop="0" name="transition_jouer" pingpong="0" repeatcount="1" repeatto="0" sid="890714127540671" speed="12">
+                    <animation framecount="4" loop="0" name="transition_jouer" pingpong="0" repeatcount="1" repeatto="0" sid="890714127540671" speed="10">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\utilisateur\Desktop\FNS\DA\UI\Menu principal\Menu\MP1 suite\MP1 Transi 1.png">
                             <collision-poly>
                                 <point x="0.0886991" y="0.053614" />
@@ -1070,6 +1112,7 @@
             <file name="crayon4.ogg" />
         </sound-folder>
         <file name="Bip_scan.ogg" />
+        <file name="Depart.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>

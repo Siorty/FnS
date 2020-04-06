@@ -173,13 +173,13 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="4" name="Set animation" sid="667073757293120" type="MP">
-                                            <param id="0" name="Animation">&quot;transition_jouer&quot;</param>
-                                            <param id="1" name="From">1</param>
-                                        </action>
                                         <action id="-10" name="Set value" sid="689364502615946" type="MP">
                                             <param id="0" name="Instance variable">MP_Seletion_nb_jouer</param>
                                             <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="667073757293120" type="MP">
+                                            <param id="0" name="Animation">&quot;transition_jouer&quot;</param>
+                                            <param id="1" name="From">1</param>
                                         </action>
                                     </actions>
                                 </event-block>
