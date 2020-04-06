@@ -14,10 +14,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet order="1">Global</event-sheet>
         <event-sheet order="2">Contrôles</event-sheet>
         <event-sheet order="3">Camera</event-sheet>
-        <event-sheet active="1" order="4">Collect</event-sheet>
+        <event-sheet order="4">Collect</event-sheet>
         <event-sheet order="5">Timer</event-sheet>
         <event-sheet order="6">Son</event-sheet>
         <event-sheet order="7">Break</event-sheet>
+        <event-sheet active="1" order="8">Menupause</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -49,5 +50,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Caisse/" />
         <folder expanded="1" path="animation-folder/Cercle/" />
         <folder expanded="1" path="animation-folder/Rayon_merde/" />
+        <folder expanded="1" path="animation-folder/Menu_pause/" />
     </folders-expanded>
 </c2uistate>

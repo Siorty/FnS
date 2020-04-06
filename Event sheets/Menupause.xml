@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Menupause</name>
+    <events>
+        <variable comment="3=continer / 2=option / 1=retour_menu / 0=credits" constant="0" name="menu_choose" sid="437529133530566" static="0" type="number">3</variable>
+        <event-block sid="132673468008632">
+            <conditions>
+                <condition id="0" name="On function" sid="973546090076197" type="Function">
+                    <param id="0" name="Name">&quot;UnPaused&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="910606926738833" type="System">
+                    <param id="0" name="Time scale">1.0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="143881380522055" type="Menu_pause">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="995976608825849" type="Menu_pause">
+                    <param id="0" name="Instance variable">isPaused</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="845328047076955">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="755514944935606" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="766938709447076" type="Menu_pause">
+                    <param id="0" name="X">1152</param>
+                    <param id="1" name="Y">648</param>
+                </action>
+                <action id="-15" name="Set visible" sid="104108572057330" type="Menu_pause">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="367017886214039">
+            <conditions>
+                <condition id="6" name="On button pressed" sid="263226977564203" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">9</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="232309899256357">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="637703172182817" type="Menu_pause">
+                            <param id="0" name="Instance variable">isPaused</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set time scale" sid="416381056063564" type="System">
+                            <param id="0" name="Time scale">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="476033459398516" type="Menu_pause">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="886385144392365" type="Menu_pause">
+                            <param id="0" name="Instance variable">isPaused</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="129807329830707">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="553205822478422" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="186670867231831" type="Function">
+                            <param id="0" name="Name">&quot;UnPaused&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="166607465910570">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="102743986927994" type="Menu_pause">
+                    <param id="0" name="Instance variable">isPaused</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="152993389707903">
+                    <conditions>
+                        <condition id="6" name="On button pressed" sid="413080289415999" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">12</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="249704970790742" type="System">
+                            <param id="0" name="Variable">menu_choose</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="671283876027875">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="590235367255407" type="System">
+                                    <param id="0" name="Variable">menu_choose</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="340306287947163" type="System">
+                                    <param id="0" name="Variable">menu_choose</param>
+                                    <param id="1" name="Value">-1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="717061394040510">
+                    <conditions>
+                        <condition id="6" name="On button pressed" sid="120653354744133" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="571201312422656" type="System">
+                            <param id="0" name="Variable">menu_choose</param>
+                            <param id="1" name="Value">-1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="787676313359837">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="101974341807348" type="System">
+                                    <param id="0" name="Variable">menu_choose</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="854566259525593" type="System">
+                                    <param id="0" name="Variable">menu_choose</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-group description="" sid="694624256621050" title="SelectionMenu">
+                    <sub-events>
+                        <event-block sid="587143656210854">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="981484690252023" type="System">
+                                    <param id="0" name="Variable">menu_choose</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="947250484917925" type="Menu_pause">
+                                    <param id="0" name="Animation">&quot;credits&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="372574877186841">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="638701566098873" type="System">
+                                    <param id="0" name="Variable">menu_choose</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="833819828331797" type="Menu_pause">
+                                    <param id="0" name="Animation">&quot;retour_menu&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="158770038842076">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="282994295281477" type="System">
+                                    <param id="0" name="Variable">menu_choose</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="211320526004209" type="Menu_pause">
+                                    <param id="0" name="Animation">&quot;option&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="294928125823019">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="863018536304241" type="System">
+                                    <param id="0" name="Variable">menu_choose</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="456759988195545" type="Menu_pause">
+                                    <param id="0" name="Animation">&quot;continuer&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="494382137116476" title="Fonction_menu">
+                    <sub-events>
+                        <event-block sid="464327320316444">
+                            <conditions>
+                                <condition id="6" name="On button pressed" sid="645848037643177" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="496332808881015">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="392933867452530" type="System">
+                                            <param id="0" name="Variable">menu_choose</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="897955173283221" type="Function">
+                                            <param id="0" name="Name">&quot;UnPaused&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="279184175485926">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="458239103062191" type="System">
+                                            <param id="0" name="Variable">menu_choose</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="499384342662468" type="Function">
+                                            <param id="0" name="Name">&quot;UnPaused&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action id="-26" name="Restart layout" sid="714237262747592" type="System" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
