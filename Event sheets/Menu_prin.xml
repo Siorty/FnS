@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Menu_prin</name>
+    <events>
+        <variable comment="3=jouer / 2=entrainement / 1=option / 0=quitter" constant="0" name="MP_choose" sid="772688580966024" static="0" type="number">3</variable>
+        <variable comment="1=solo / 0=multijoueur" constant="0" name="MP_Selection_Choose" sid="937184281184585" static="0" type="number">1</variable>
+        <event-block sid="916987519783249">
+            <conditions>
+                <condition id="4" name="On finished" sid="124312511274653" type="MP">
+                    <param id="0" name="Animation">&quot;transition_jouer&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="803293441091748" type="MP">
+                    <param id="0" name="Instance variable">MP_Seletion_nb_jouer</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="994574192270144">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="563488105090112" type="MP">
+                    <param id="0" name="Instance variable">MP_Seletion_nb_jouer</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="710652971609847">
+                    <conditions>
+                        <condition id="6" name="On button pressed" sid="232388642456522" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">12</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="881143037083217" type="System">
+                            <param id="0" name="Variable">MP_choose</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="654828338873459">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="747815845287327" type="System">
+                                    <param id="0" name="Variable">MP_choose</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="324224658713805" type="System">
+                                    <param id="0" name="Variable">MP_choose</param>
+                                    <param id="1" name="Value">-1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="312923755459134">
+                    <conditions>
+                        <condition id="6" name="On button pressed" sid="226034227529791" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="565023765121590" type="System">
+                            <param id="0" name="Variable">MP_choose</param>
+                            <param id="1" name="Value">-1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="731575813687058">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="356845906538609" type="System">
+                                    <param id="0" name="Variable">MP_choose</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="368554459434659" type="System">
+                                    <param id="0" name="Variable">MP_choose</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-group description="" sid="866467742057180" title="Selection_MP">
+                    <sub-events>
+                        <event-block sid="177312639479736">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="711470862881383" type="System">
+                                    <param id="0" name="Variable">MP_choose</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="762494426394430" type="MP">
+                                    <param id="0" name="Animation">&quot;quitter&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="847031587568486">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="785440093080567" type="System">
+                                    <param id="0" name="Variable">MP_choose</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="218473879828110" type="MP">
+                                    <param id="0" name="Animation">&quot;options&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="191123254174449">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="988784468637928" type="System">
+                                    <param id="0" name="Variable">MP_choose</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="627590910284170" type="MP">
+                                    <param id="0" name="Animation">&quot;entrainement&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="344040715296448">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="737550452184048" type="System">
+                                    <param id="0" name="Variable">MP_choose</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="413844666586849" type="MP">
+                                    <param id="0" name="Animation">&quot;jouer&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="420553518895230" title="MP_Fonction">
+                    <sub-events>
+                        <event-block sid="161069616206999">
+                            <conditions>
+                                <condition id="6" name="On button pressed" sid="923780393879948" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="977619084293885">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="591831304116897" type="System">
+                                            <param id="0" name="Variable">MP_choose</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="667073757293120" type="MP">
+                                            <param id="0" name="Animation">&quot;transition_jouer&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="689364502615946" type="MP">
+                                            <param id="0" name="Instance variable">MP_Seletion_nb_jouer</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-block>
+        <event-block sid="125263599436000">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="682586571260250" type="MP">
+                    <param id="0" name="Instance variable">MP_Seletion_nb_jouer</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="452798985967806">
+                    <conditions>
+                        <condition id="6" name="On button pressed" sid="240268694161515" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">12</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="992009568456102" type="System">
+                            <param id="0" name="Variable">MP_Selection_Choose</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="764380625995101">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="461527652476540" type="System">
+                                    <param id="0" name="Variable">MP_Selection_Choose</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="819404732412696" type="System">
+                                    <param id="0" name="Variable">MP_Selection_Choose</param>
+                                    <param id="1" name="Value">-1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="591893655496503">
+                    <conditions>
+                        <condition id="6" name="On button pressed" sid="302083167356134" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="833503325064601" type="System">
+                            <param id="0" name="Variable">MP_Selection_Choose</param>
+                            <param id="1" name="Value">-1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="939259695456513">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="527019447869673" type="System">
+                                    <param id="0" name="Variable">MP_Selection_Choose</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="450647924889547" type="System">
+                                    <param id="0" name="Variable">MP_Selection_Choose</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-group description="" sid="152308982459676" title="MP_Selection_Joueur">
+                    <sub-events>
+                        <event-block sid="736464438458882">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="723726991724892" type="System">
+                                    <param id="0" name="Variable">MP_Selection_Choose</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="246779832737654" type="MP">
+                                    <param id="0" name="Animation">&quot;multi&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="921216470112832">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="405264066076688" type="System">
+                                    <param id="0" name="Variable">MP_Selection_Choose</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="452178543461884" type="MP">
+                                    <param id="0" name="Animation">&quot;solo&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="538469209130750" title="MP_Selection_Joueur_Fonction">
+                    <sub-events>
+                        <event-block sid="413847401524024">
+                            <conditions>
+                                <condition id="6" name="On button pressed" sid="213800539216254" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="114037587640688">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="171317724876444" type="System">
+                                            <param id="0" name="Variable">MP_Selection_Choose</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="168058057318979" type="System">
+                                            <param id="0" name="Layout">Jeu</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

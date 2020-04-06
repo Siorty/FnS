@@ -10,15 +10,17 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Layout 1</layout>
-        <event-sheet order="1">Global</event-sheet>
+        <layout order="0">Jeu</layout>
+        <layout order="9">Menu_principal</layout>
         <event-sheet order="2">Contrôles</event-sheet>
-        <event-sheet order="3">Camera</event-sheet>
-        <event-sheet order="4">Collect</event-sheet>
-        <event-sheet order="5">Timer</event-sheet>
+        <event-sheet order="5">Camera</event-sheet>
+        <event-sheet order="3">Collect</event-sheet>
+        <event-sheet order="4">Timer</event-sheet>
         <event-sheet order="6">Son</event-sheet>
         <event-sheet order="7">Break</event-sheet>
-        <event-sheet active="1" order="8">Menupause</event-sheet>
+        <event-sheet order="8">Menupause</event-sheet>
+        <event-sheet active="1" order="10">Menu_prin</event-sheet>
+        <event-sheet order="1">Global</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -29,6 +31,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1" />
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/Fonction_Construct/" />
+        <folder expanded="0" path="object-folder/UI/" />
+        <folder expanded="0" path="object-folder/Background/" />
+        <folder expanded="0" path="object-folder/Object_utile/" />
+        <folder expanded="0" path="object-folder/Player/" />
+        <folder expanded="0" path="object-folder/Rayon/Etendoir/" />
+        <folder expanded="0" path="object-folder/Produit/" />
+        <folder expanded="0" path="object-folder/Extrat/" />
+        <folder expanded="1" path="object-folder/MP/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
@@ -37,19 +48,20 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="0" path="sound-folder/Hit/" />
         <folder expanded="1" path="sound-folder/Ramassage/" />
-        <folder expanded="1" path="animation-folder/Vehicule/" />
+        <folder expanded="1" path="animation-folder/Liste/" />
+        <folder expanded="1" path="animation-folder/Menu_pause/" />
         <folder expanded="1" path="animation-folder/Mur/" />
         <folder expanded="1" path="animation-folder/CameraBis/" />
         <folder expanded="1" path="animation-folder/ProdDisable/" />
-        <folder expanded="1" path="animation-folder/Produit/" />
-        <folder expanded="1" path="animation-folder/Liste/" />
         <folder expanded="1" path="animation-folder/Zone_caisse/" />
+        <folder expanded="1" path="animation-folder/Vehicule/" />
         <folder expanded="1" path="animation-folder/Etendoir/" />
         <folder expanded="1" path="animation-folder/Rayon/" />
-        <folder expanded="1" path="animation-folder/Rayon_spe/" />
-        <folder expanded="1" path="animation-folder/Caisse/" />
-        <folder expanded="1" path="animation-folder/Cercle/" />
         <folder expanded="1" path="animation-folder/Rayon_merde/" />
-        <folder expanded="1" path="animation-folder/Menu_pause/" />
+        <folder expanded="1" path="animation-folder/Rayon_spe/" />
+        <folder expanded="1" path="animation-folder/Produit/" />
+        <folder expanded="1" path="animation-folder/Caisse/" />
+        <folder expanded="1" path="animation-folder/Fond_MP/" />
+        <folder expanded="1" path="animation-folder/MP/" />
     </folders-expanded>
 </c2uistate>

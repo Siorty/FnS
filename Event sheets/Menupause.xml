@@ -251,7 +251,9 @@
                                             <param id="0" name="Name">&quot;UnPaused&quot;</param>
                                             <param id="1" name="Parameter {n}"></param>
                                         </action>
-                                        <action id="-26" name="Restart layout" sid="714237262747592" type="System" />
+                                        <action id="-2" name="Go to layout" sid="714237262747592" type="System">
+                                            <param id="0" name="Layout">Menu_principal</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>

@@ -10,5 +10,16 @@
         <include>Collect</include>
         <include>Camera</include>
         <include>Contrôles</include>
+        <event-block sid="843001840862239">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="859103982079614" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="847911561200017" type="System">
+                    <param id="0" name="Variable">Manette</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
