@@ -232,5 +232,99 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="111673634872578" title="Sound_menu">
+            <sub-events>
+                <event-block sid="289902891206102">
+                    <conditions>
+                        <condition id="0" name="On function" sid="311963223855144" type="Function">
+                            <param id="0" name="Name">&quot;son_menu&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <variable constant="0" name="Menu_random" sid="880445792966162" static="0" type="number">0</variable>
+                        <event-block sid="640467745761213">
+                            <conditions />
+                            <actions>
+                                <action id="-9" name="Set value" sid="937834958584609" type="System">
+                                    <param id="0" name="Variable">Menu_random</param>
+                                    <param id="1" name="Value">choose(0,1,2,3)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="401780747388940">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="538611405399552" type="System">
+                                            <param id="0" name="Variable">Menu_random</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="683643970598834" type="Audio">
+                                            <param id="0" name="Audio file">crayon1</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="783900372600130">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="291339355389032" type="System">
+                                            <param id="0" name="Variable">Menu_random</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="660515405795540" type="Audio">
+                                            <param id="0" name="Audio file">crayon2</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="707875488437499">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="464099987663837" type="System">
+                                            <param id="0" name="Variable">Menu_random</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="406444479687774" type="Audio">
+                                            <param id="0" name="Audio file">crayon3</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="186630763661640">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="285329323774888" type="System">
+                                            <param id="0" name="Variable">Menu_random</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="264848010530757" type="Audio">
+                                            <param id="0" name="Audio file">crayon4</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

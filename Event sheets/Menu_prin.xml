@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Menu_prin</name>
     <events>
+        <include>Son</include>
         <variable comment="3=jouer / 2=entrainement / 1=option / 0=quitter" constant="0" name="MP_choose" sid="772688580966024" static="0" type="number">3</variable>
         <variable comment="1=solo / 0=multijoueur" constant="0" name="MP_Selection_Choose" sid="937184281184585" static="0" type="number">1</variable>
         <event-block sid="916987519783249">
@@ -35,25 +36,24 @@
                             <param id="1" name="Button">12</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-10" name="Add to" sid="881143037083217" type="System">
-                            <param id="0" name="Variable">MP_choose</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
+                    <actions />
                     <sub-events>
                         <event-block sid="654828338873459">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="747815845287327" type="System">
                                     <param id="0" name="Variable">MP_choose</param>
-                                    <param id="1" name="Comparison">4</param>
+                                    <param id="1" name="Comparison">2</param>
                                     <param id="2" name="Value">3</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-10" name="Add to" sid="324224658713805" type="System">
+                                <action id="-10" name="Add to" sid="881143037083217" type="System">
                                     <param id="0" name="Variable">MP_choose</param>
-                                    <param id="1" name="Value">-1</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Call function" sid="214278960146634" type="Function">
+                                    <param id="0" name="Name">&quot;son_menu&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
                                 </action>
                             </actions>
                         </event-block>
@@ -66,25 +66,24 @@
                             <param id="1" name="Button">13</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-10" name="Add to" sid="565023765121590" type="System">
-                            <param id="0" name="Variable">MP_choose</param>
-                            <param id="1" name="Value">-1</param>
-                        </action>
-                    </actions>
+                    <actions />
                     <sub-events>
                         <event-block sid="731575813687058">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="356845906538609" type="System">
                                     <param id="0" name="Variable">MP_choose</param>
-                                    <param id="1" name="Comparison">2</param>
+                                    <param id="1" name="Comparison">4</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-10" name="Add to" sid="368554459434659" type="System">
+                                <action id="-10" name="Add to" sid="565023765121590" type="System">
                                     <param id="0" name="Variable">MP_choose</param>
-                                    <param id="1" name="Value">1</param>
+                                    <param id="1" name="Value">-1</param>
+                                </action>
+                                <action id="0" name="Call function" sid="435116124408076" type="Function">
+                                    <param id="0" name="Name">&quot;son_menu&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
                                 </action>
                             </actions>
                         </event-block>
@@ -219,25 +218,24 @@
                             <param id="1" name="Button">12</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-10" name="Add to" sid="992009568456102" type="System">
-                            <param id="0" name="Variable">MP_Selection_Choose</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
+                    <actions />
                     <sub-events>
                         <event-block sid="764380625995101">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="461527652476540" type="System">
                                     <param id="0" name="Variable">MP_Selection_Choose</param>
-                                    <param id="1" name="Comparison">4</param>
+                                    <param id="1" name="Comparison">2</param>
                                     <param id="2" name="Value">1</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-10" name="Add to" sid="819404732412696" type="System">
+                                <action id="-10" name="Add to" sid="992009568456102" type="System">
                                     <param id="0" name="Variable">MP_Selection_Choose</param>
-                                    <param id="1" name="Value">-1</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Call function" sid="530076317860673" type="Function">
+                                    <param id="0" name="Name">&quot;son_menu&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
                                 </action>
                             </actions>
                         </event-block>
@@ -250,25 +248,24 @@
                             <param id="1" name="Button">13</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-10" name="Add to" sid="833503325064601" type="System">
-                            <param id="0" name="Variable">MP_Selection_Choose</param>
-                            <param id="1" name="Value">-1</param>
-                        </action>
-                    </actions>
+                    <actions />
                     <sub-events>
                         <event-block sid="939259695456513">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="527019447869673" type="System">
                                     <param id="0" name="Variable">MP_Selection_Choose</param>
-                                    <param id="1" name="Comparison">2</param>
+                                    <param id="1" name="Comparison">4</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-10" name="Add to" sid="450647924889547" type="System">
+                                <action id="-10" name="Add to" sid="833503325064601" type="System">
                                     <param id="0" name="Variable">MP_Selection_Choose</param>
-                                    <param id="1" name="Value">1</param>
+                                    <param id="1" name="Value">-1</param>
+                                </action>
+                                <action id="0" name="Call function" sid="807401343184473" type="Function">
+                                    <param id="0" name="Name">&quot;son_menu&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
                                 </action>
                             </actions>
                         </event-block>

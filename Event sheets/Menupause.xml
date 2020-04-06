@@ -93,25 +93,24 @@
                             <param id="1" name="Button">12</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-10" name="Add to" sid="249704970790742" type="System">
-                            <param id="0" name="Variable">menu_choose</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
+                    <actions />
                     <sub-events>
                         <event-block sid="671283876027875">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="590235367255407" type="System">
                                     <param id="0" name="Variable">menu_choose</param>
-                                    <param id="1" name="Comparison">4</param>
+                                    <param id="1" name="Comparison">2</param>
                                     <param id="2" name="Value">3</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-10" name="Add to" sid="340306287947163" type="System">
+                                <action id="-10" name="Add to" sid="249704970790742" type="System">
                                     <param id="0" name="Variable">menu_choose</param>
-                                    <param id="1" name="Value">-1</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Call function" sid="865374572084548" type="Function">
+                                    <param id="0" name="Name">&quot;son_menu&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
                                 </action>
                             </actions>
                         </event-block>
@@ -124,25 +123,24 @@
                             <param id="1" name="Button">13</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-10" name="Add to" sid="571201312422656" type="System">
-                            <param id="0" name="Variable">menu_choose</param>
-                            <param id="1" name="Value">-1</param>
-                        </action>
-                    </actions>
+                    <actions />
                     <sub-events>
                         <event-block sid="787676313359837">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="101974341807348" type="System">
                                     <param id="0" name="Variable">menu_choose</param>
-                                    <param id="1" name="Comparison">2</param>
+                                    <param id="1" name="Comparison">4</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-10" name="Add to" sid="854566259525593" type="System">
+                                <action id="-10" name="Add to" sid="571201312422656" type="System">
                                     <param id="0" name="Variable">menu_choose</param>
-                                    <param id="1" name="Value">1</param>
+                                    <param id="1" name="Value">-1</param>
+                                </action>
+                                <action id="0" name="Call function" sid="245316972209947" type="Function">
+                                    <param id="0" name="Name">&quot;son_menu&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
                                 </action>
                             </actions>
                         </event-block>

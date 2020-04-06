@@ -1063,6 +1063,12 @@
             <file name="Ramassage2_ogg.ogg" />
             <file name="Ramassage3_ogg.ogg" />
         </sound-folder>
+        <sound-folder name="Selection_menu">
+            <file name="crayon1.ogg" />
+            <file name="crayon2.ogg" />
+            <file name="crayon3.ogg" />
+            <file name="crayon4.ogg" />
+        </sound-folder>
         <file name="Bip_scan.ogg" />
     </sounds-folder>
     <music-folder />
