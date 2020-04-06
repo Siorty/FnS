@@ -19,8 +19,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet order="6">Son</event-sheet>
         <event-sheet order="7">Break</event-sheet>
         <event-sheet order="8">Menupause</event-sheet>
-        <event-sheet active="1" order="10">Menu_prin</event-sheet>
-        <event-sheet order="1">Global</event-sheet>
+        <event-sheet order="10">Menu_prin</event-sheet>
+        <event-sheet active="1" order="1">Global</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -31,7 +31,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1" />
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="0" path="object-folder/Fonction_Construct/" />
+        <folder expanded="1" path="object-folder/Fonction_Construct/" />
         <folder expanded="0" path="object-folder/UI/" />
         <folder expanded="0" path="object-folder/Background/" />
         <folder expanded="0" path="object-folder/Object_utile/" />

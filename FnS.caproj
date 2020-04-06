@@ -11,6 +11,7 @@
     <saved-with-version>27200</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -61,6 +62,9 @@
             </object-type>
             <object-type name="Keyboard" sid="597564555530880">
                 <plugin id="Keyboard" />
+            </object-type>
+            <object-type name="Browser" sid="182696622698237">
+                <plugin id="Browser" />
             </object-type>
         </object-folder>
         <object-folder name="UI">
@@ -1007,8 +1011,8 @@
     </object-folder>
     <families />
     <layout-folder>
-        <layout>Jeu.xml</layout>
         <layout>Menu_principal.xml</layout>
+        <layout>Jeu.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Global.xml</event-sheet>
@@ -1043,6 +1047,7 @@
             </properties>
         </global-instance>
         <global-instance type="Function" uid="23" />
+        <global-instance type="Browser" uid="29" />
     </global-instances>
     <sounds-folder>
         <sound-folder name="Hit">

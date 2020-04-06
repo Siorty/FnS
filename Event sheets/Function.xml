@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Function</name>
+    <events>
+        <variable constant="0" name="Variable1" sid="288155652968286" static="0" type="number">0</variable>
+        <event-block sid="461208369702335">
+            <conditions>
+                <condition id="0" name="On function" sid="828508471778450" type="Function">
+                    <param id="0" name="Name">&quot;Deplacement_Menu&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="495411037596088" type="System">
+                    <param id="0" name="Variable">Variable1</param>
+                    <param id="1" name="Value">Function.Param(0)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
