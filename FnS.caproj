@@ -283,6 +283,14 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="Texte_position" sid="231228305747112">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="416713768322353" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Player">
             <object-type name="Vehicule" sid="898296956890715">
@@ -292,6 +300,7 @@
                     <instance-variable name="index_collect2" sid="293196546914478" type="number" />
                     <instance-variable name="index_collect3" sid="466534000687703" type="number" />
                     <instance-variable name="nb_prod" sid="189593693219549" type="number" />
+                    <instance-variable name="WIN" sid="260078219008131" type="boolean" />
                 </instance-variables>
                 <behaviors>
                     <behavior-type name="ScrollTo" sid="383433303520065">
@@ -1066,6 +1075,8 @@
         <event-sheet>Break.xml</event-sheet>
         <event-sheet>Menupause.xml</event-sheet>
         <event-sheet>Menu_prin.xml</event-sheet>
+        <event-sheet>Décompte.xml</event-sheet>
+        <event-sheet>Win_condition.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="1" />

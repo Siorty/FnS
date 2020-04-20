@@ -6,34 +6,7 @@
         <variable constant="0" name="prod_index_0" sid="243472973813055" static="0" type="number">-100</variable>
         <variable constant="0" name="prod_index_1" sid="627821947153557" static="0" type="number">-100</variable>
         <variable constant="0" name="prod_index_2" sid="211419162834152" static="0" type="number">-100</variable>
-        <variable constant="1" name="nb_prodmax" sid="389513178135312" static="0" type="number">3</variable>
-        <variable constant="0" name="Score" sid="181569555722902" static="0" type="number">0</variable>
-        <event-group description="" disabled="1" sid="603638027994562" title="Score">
-            <sub-events>
-                <event-block disabled="1" sid="406874960028321">
-                    <conditions />
-                    <actions>
-                        <action id="-10" name="Add to" sid="266104389144811" type="System">
-                            <param id="0" name="Variable">Score</param>
-                            <param id="1" name="Value">10</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="530202952817182" type="System">
-                            <param id="0" name="Seconds">5</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-block any="1" sid="472953222043121">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="943292001111498" type="System" />
-            </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="793942727148904" type="Score">
-                    <param id="0" name="Text">&quot;Score : &quot; &amp; Score</param>
-                </action>
-            </actions>
-        </event-block>
+        <variable constant="1" name="NB_PRODMAX" sid="389513178135312" static="0" type="number">2</variable>
         <event-block sid="478527751695337">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="473512178861284" type="System" />
@@ -411,21 +384,19 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-10" name="Add to" sid="505182358601056" type="System">
+                <action disabled="1" id="-10" name="Add to" sid="505182358601056" type="System">
                     <param id="0" name="Variable">Score</param>
                     <param id="1" name="Value">Vehicule.nb_prod</param>
+                </action>
+                <action id="0" name="Call function" sid="372211296636367" type="Function">
+                    <param id="0" name="Name">&quot;win_condition&quot;</param>
+                    <param id="1" name="Parameter {n}">Vehicule.nb_prod</param>
                 </action>
                 <action id="-10" name="Set value" sid="734505067638901" type="Vehicule">
                     <param id="0" name="Instance variable">nb_prod</param>
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
-            <sub-events>
-                <event-block sid="222944961996228">
-                    <conditions />
-                    <actions />
-                </event-block>
-            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

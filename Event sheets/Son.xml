@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Son</name>
     <events>
-        <event-block sid="148787822202312">
+        <event-block disabled="1" sid="148787822202312">
             <conditions>
                 <condition id="1" name="Is overlapping another object" sid="484340713658417" type="Vehicule">
                     <param id="0" name="Object">Zone_caisse</param>

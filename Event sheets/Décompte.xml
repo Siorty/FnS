@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Décompte</name>
+    <events>
+        <event-block sid="984497080255945">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="364559827993375" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="21" name="Set immovable" sid="904127579019231" type="Vehicule">
+                    <param id="0" name="Setting">1</param>
+                </action>
+                <action id="0" name="Set text" sid="508627066512479" type="Décompte">
+                    <param id="0" name="Text">3</param>
+                </action>
+                <action id="0" name="Play" sid="878489431709805" type="Audio">
+                    <param id="0" name="Audio file">Depart</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="865947259064982" type="System">
+                    <param id="0" name="Seconds">0.88</param>
+                </action>
+                <action id="0" name="Set text" sid="449645610034899" type="Décompte">
+                    <param id="0" name="Text">2</param>
+                </action>
+                <action id="-16" name="Wait" sid="100117555627454" type="System">
+                    <param id="0" name="Seconds">0.88</param>
+                </action>
+                <action id="0" name="Set text" sid="171090059850415" type="Décompte">
+                    <param id="0" name="Text">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="268497303739290" type="System">
+                    <param id="0" name="Seconds">0.88</param>
+                </action>
+                <action id="0" name="Set text" sid="777775197371396" type="Décompte">
+                    <param id="0" name="Text">&quot;ACHETEZ&quot;</param>
+                </action>
+                <action behavior="Physics" id="21" name="Set immovable" sid="489947390972607" type="Vehicule">
+                    <param id="0" name="Setting">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="150969914522497" type="System">
+                    <param id="0" name="Seconds">0.88</param>
+                </action>
+                <action id="-3" name="Set position" sid="189528356183547" type="Décompte">
+                    <param id="0" name="X">ProdDisable.X</param>
+                    <param id="1" name="Y">ProdDisable.Y</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

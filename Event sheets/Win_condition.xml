@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Win_condition</name>
+    <events>
+        <variable constant="1" name="WIN_CONDTI" sid="468169294940293" static="0" type="number">3</variable>
+        <variable constant="0" name="Score" sid="369329559465010" static="0" type="number">0</variable>
+        <event-block sid="825925518696509">
+            <conditions>
+                <condition id="0" name="On function" sid="212441303949545" type="Function">
+                    <param id="0" name="Name">&quot;win_condition&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="403643027909355" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">Function.Param(0)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="157254184544521">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="843372588084238" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">WIN_CONDTI</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="630405267109458" type="Vehicule">
+                            <param id="0" name="Instance variable">WIN</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="889940981283617" type="Décompte">
+                            <param id="0" name="X">Texte_position.X</param>
+                            <param id="1" name="Y">Texte_position.Y</param>
+                        </action>
+                        <action id="0" name="Set text" sid="713000497133845" type="Décompte">
+                            <param id="0" name="Text">&quot;WIN&quot;</param>
+                        </action>
+                        <action id="-13" name="Set time scale" sid="867129935138945" type="System">
+                            <param id="0" name="Time scale">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

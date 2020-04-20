@@ -551,6 +551,28 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="Texte_position" uid="31">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>775</x>
+                        <y>425</y>
+                        <z>0</z>
+                        <width>250</width>
+                        <height>250</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -862,6 +884,7 @@
                         <index_collect2>-100</index_collect2>
                         <index_collect3>-100</index_collect3>
                         <nb_prod>0</nb_prod>
+                        <WIN>false</WIN>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="ScrollTo">
@@ -1010,11 +1033,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>751</x>
-                        <y>381</y>
+                        <x>759</x>
+                        <y>392</y>
                         <z>0</z>
-                        <width>717</width>
-                        <height>412</height>
+                        <width>645</width>
+                        <height>246</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

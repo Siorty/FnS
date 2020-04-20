@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Global</name>
     <events>
+        <include>Win_condition</include>
+        <include>Décompte</include>
         <include>Menupause</include>
         <include>Break</include>
         <include>Son</include>
@@ -18,46 +20,6 @@
                 <action id="-9" name="Set value" sid="847911561200017" type="System">
                     <param id="0" name="Variable">Manette</param>
                     <param id="1" name="Value">1</param>
-                </action>
-                <action behavior="Physics" id="21" name="Set immovable" sid="588450341214916" type="Vehicule">
-                    <param id="0" name="Setting">1</param>
-                </action>
-                <action id="0" name="Set text" sid="443987183081620" type="Décompte">
-                    <param id="0" name="Text">3</param>
-                </action>
-                <action id="0" name="Play" sid="337334217266149" type="Audio">
-                    <param id="0" name="Audio file">Depart</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-                <action id="-16" name="Wait" sid="224173591130085" type="System">
-                    <param id="0" name="Seconds">0.88</param>
-                </action>
-                <action id="0" name="Set text" sid="299056039055555" type="Décompte">
-                    <param id="0" name="Text">2</param>
-                </action>
-                <action id="-16" name="Wait" sid="295962965649793" type="System">
-                    <param id="0" name="Seconds">0.88</param>
-                </action>
-                <action id="0" name="Set text" sid="940232904065961" type="Décompte">
-                    <param id="0" name="Text">1</param>
-                </action>
-                <action id="-16" name="Wait" sid="745654453539074" type="System">
-                    <param id="0" name="Seconds">0.88</param>
-                </action>
-                <action id="0" name="Set text" sid="256065409499300" type="Décompte">
-                    <param id="0" name="Text">&quot;ACHETEZ&quot;</param>
-                </action>
-                <action behavior="Physics" id="21" name="Set immovable" sid="109020420417904" type="Vehicule">
-                    <param id="0" name="Setting">0</param>
-                </action>
-                <action id="-16" name="Wait" sid="898817935495132" type="System">
-                    <param id="0" name="Seconds">0.88</param>
-                </action>
-                <action id="-3" name="Set position" sid="673158926227095" type="Décompte">
-                    <param id="0" name="X">ProdDisable.X</param>
-                    <param id="1" name="Y">ProdDisable.Y</param>
                 </action>
             </actions>
         </event-block>
