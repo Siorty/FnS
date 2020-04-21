@@ -6,6 +6,7 @@
         <variable constant="0" name="prod_index_0" sid="243472973813055" static="0" type="number">-100</variable>
         <variable constant="0" name="prod_index_1" sid="627821947153557" static="0" type="number">-100</variable>
         <variable constant="0" name="prod_index_2" sid="211419162834152" static="0" type="number">-100</variable>
+        <variable constant="0" name="prod_index_3" sid="616650770819468" static="0" type="number">-100</variable>
         <variable constant="1" name="NB_PRODMAX" sid="389513178135312" static="0" type="number">2</variable>
         <event-block sid="478527751695337">
             <conditions>
@@ -26,6 +27,10 @@
                 </action>
                 <action id="-9" name="Set value" sid="238739571679024" type="System">
                     <param id="0" name="Variable">prod_index_2</param>
+                    <param id="1" name="Value">choose(0,1,2,3,4,5)</param>
+                </action>
+                <action id="-9" name="Set value" sid="793324325917538" type="System">
+                    <param id="0" name="Variable">prod_index_3</param>
                     <param id="1" name="Value">choose(0,1,2,3,4,5)</param>
                 </action>
             </actions>
@@ -55,6 +60,21 @@
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">prod_index_2</param>
                                 </condition>
+                                <condition id="-14" name="Compare variable" sid="132893868056141" type="System">
+                                    <param id="0" name="Variable">prod_index_3</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">prod_index_0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="395735333668832" type="System">
+                                    <param id="0" name="Variable">prod_index_3</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">prod_index_1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="485828219096043" type="System">
+                                    <param id="0" name="Variable">prod_index_3</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">prod_index_2</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="-9" name="Set value" sid="256077422610553" type="System">
@@ -67,6 +87,10 @@
                                 </action>
                                 <action id="-9" name="Set value" sid="470300691566274" type="System">
                                     <param id="0" name="Variable">prod_index_2</param>
+                                    <param id="1" name="Value">choose(0,1,2,3,4,5)</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="126414800957927" type="System">
+                                    <param id="0" name="Variable">prod_index_3</param>
                                     <param id="1" name="Value">choose(0,1,2,3,4,5)</param>
                                 </action>
                             </actions>
@@ -118,6 +142,21 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="579886935564468">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="896245766434350" type="Liste">
+                            <param id="0" name="Instance variable">Index_list</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="131069723601522" type="Liste">
+                            <param id="0" name="Instance variable">Prod_index_list</param>
+                            <param id="1" name="Value">prod_index_3</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="264666112650935">
                     <conditions>
                         <condition id="-11" name="For Each" sid="944162720503745" type="System">
@@ -126,73 +165,6 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="614159916184124">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="273912468212830" type="Vehicule">
-                                    <param id="0" name="Instance variable">index_collect2</param>
-                                    <param id="1" name="Comparison">5</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                                <condition id="-7" name="Compare instance variable" sid="797728173032140" type="Vehicule">
-                                    <param id="0" name="Instance variable">index_collect1</param>
-                                    <param id="1" name="Comparison">5</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="314367556645017" type="Vehicule">
-                                    <param id="0" name="Instance variable">index_collect3</param>
-                                    <param id="1" name="Value">Liste.Prod_index_list</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="429696740600275" type="System">
-                                    <param id="0" name="Variable">prod_index_2</param>
-                                    <param id="1" name="Value">Liste.Prod_index_list</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="653688322178252">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="487500693367405" type="Vehicule">
-                                    <param id="0" name="Instance variable">index_collect1</param>
-                                    <param id="1" name="Comparison">5</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                                <condition id="-7" name="Compare instance variable" sid="949350310370890" type="Vehicule">
-                                    <param id="0" name="Instance variable">index_collect2</param>
-                                    <param id="1" name="Comparison">2</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="706316496816382" type="Vehicule">
-                                    <param id="0" name="Instance variable">index_collect2</param>
-                                    <param id="1" name="Value">Liste.Prod_index_list</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="152754915360565" type="System">
-                                    <param id="0" name="Variable">prod_index_1</param>
-                                    <param id="1" name="Value">Liste.Prod_index_list</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="660341872568984">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="308456389799626" type="Vehicule">
-                                    <param id="0" name="Instance variable">index_collect1</param>
-                                    <param id="1" name="Comparison">2</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="506667305920259" type="Vehicule">
-                                    <param id="0" name="Instance variable">index_collect1</param>
-                                    <param id="1" name="Value">Liste.Prod_index_list</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="549735726933012" type="System">
-                                    <param id="0" name="Variable">prod_index_0</param>
-                                    <param id="1" name="Value">Liste.Prod_index_list</param>
-                                </action>
-                            </actions>
-                        </event-block>
                         <event-group description="" sid="208970103982575" title="Create_list">
                             <sub-events>
                                 <event-block sid="974670510132659">
@@ -319,6 +291,11 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">prod_index_2</param>
                         </condition>
+                        <condition id="-7" inverted="1" name="Compare instance variable" sid="945833822432634" type="Produit">
+                            <param id="0" name="Instance variable">index_prod</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">prod_index_3</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-3" name="Set position" sid="478652862413490" type="Produit">
@@ -347,17 +324,22 @@
                         <condition id="-7" name="Compare instance variable" sid="189713290257155" type="Produit">
                             <param id="0" name="Instance variable">index_prod</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">Vehicule.index_collect1</param>
+                            <param id="2" name="Value">prod_index_0</param>
                         </condition>
                         <condition id="-7" name="Compare instance variable" sid="519145803397615" type="Produit">
                             <param id="0" name="Instance variable">index_prod</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">Vehicule.index_collect2</param>
+                            <param id="2" name="Value">prod_index_1</param>
                         </condition>
                         <condition id="-7" name="Compare instance variable" sid="208867361279154" type="Produit">
                             <param id="0" name="Instance variable">index_prod</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">Vehicule.index_collect3</param>
+                            <param id="2" name="Value">prod_index_2</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="711402578678664" type="Produit">
+                            <param id="0" name="Instance variable">index_prod</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">prod_index_3</param>
                         </condition>
                     </conditions>
                     <actions>

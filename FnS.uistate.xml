@@ -10,19 +10,19 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="12">Jeu</layout>
         <layout order="10">Menu_principal</layout>
+        <layout order="12">Jeu</layout>
         <event-sheet order="0">Global</event-sheet>
+        <event-sheet active="1" order="1">Collect</event-sheet>
         <event-sheet order="2">Contrôles</event-sheet>
-        <event-sheet order="1">Collect</event-sheet>
         <event-sheet order="3">Timer</event-sheet>
         <event-sheet order="4">Camera</event-sheet>
         <event-sheet order="5">Son</event-sheet>
         <event-sheet order="6">Décompte</event-sheet>
-        <event-sheet order="9">Menupause</event-sheet>
+        <event-sheet order="7">Win_condition</event-sheet>
         <event-sheet order="8">Menu_prin</event-sheet>
+        <event-sheet order="9">Menupause</event-sheet>
         <event-sheet order="11">Break</event-sheet>
-        <event-sheet active="1" order="7">Win_condition</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -34,9 +34,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
         <folder expanded="0" path="object-folder/Fonction_Construct/" />
-        <folder expanded="0" path="object-folder/UI/" />
+        <folder expanded="1" path="object-folder/UI/" />
         <folder expanded="0" path="object-folder/Background/" />
-        <folder expanded="1" path="object-folder/Object_utile/" />
+        <folder expanded="0" path="object-folder/Object_utile/" />
         <folder expanded="1" path="object-folder/Player/" />
         <folder expanded="0" path="object-folder/Rayon/Etendoir/" />
         <folder expanded="0" path="object-folder/Produit/" />

@@ -880,9 +880,6 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <index_collect1>-100</index_collect1>
-                        <index_collect2>-100</index_collect2>
-                        <index_collect3>-100</index_collect3>
                         <nb_prod>0</nb_prod>
                         <WIN>false</WIN>
                     </instance-variables>
@@ -1041,6 +1038,32 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Liste" uid="32">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>tomate</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Prod_index_list>0</Prod_index_list>
+                        <Index_list>3</Index_list>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>224</x>
+                        <y>32</y>
+                        <z>0</z>
+                        <width>50</width>
+                        <height>48</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

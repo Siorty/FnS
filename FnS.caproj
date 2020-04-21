@@ -296,9 +296,6 @@
             <object-type name="Vehicule" sid="898296956890715">
                 <plugin id="Sprite" />
                 <instance-variables>
-                    <instance-variable name="index_collect1" sid="914089021407028" type="number" />
-                    <instance-variable name="index_collect2" sid="293196546914478" type="number" />
-                    <instance-variable name="index_collect3" sid="466534000687703" type="number" />
                     <instance-variable name="nb_prod" sid="189593693219549" type="number" />
                     <instance-variable name="WIN" sid="260078219008131" type="boolean" />
                 </instance-variables>
